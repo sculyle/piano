@@ -172,3 +172,5 @@ python3 gpio_off.py
 python3 midi_translation.py
 cd Documents/midi_scripts
 python3 midi_translation.py
+cd Documents/midi_scripts
+python3 midi_translation.py

@@ -1,3 +1,1 @@
-{"timestamp":110031961,"category":"browser.usage","name":"interaction","extra":{"widget_id":"tabs-newtab-button","flow_id":"{09a6df96-c758-4fd0-82be-62a641d475ef}","source":"tabs-bar","glean_timestamp":"1726111789544"},"execution_counter":17}
-{"timestamp":110256167,"category":"browser.usage","name":"interaction","extra":{"flow_id":"{09a6df96-c758-4fd0-82be-62a641d475ef}","glean_timestamp":"1726112013749","source":"nav-bar","widget_id":"back-button"},"execution_counter":17}
-{"timestamp":110321113,"category":"browser.usage","name":"interaction","extra":{"source":"tabs-bar","widget_id":"tabs-newtab-button","flow_id":"{09a6df96-c758-4fd0-82be-62a641d475ef}","glean_timestamp":"1726112078696"},"execution_counter":17}
+{"timestamp":110933126,"category":"browser.usage","name":"interaction","extra":{"source":"nav-bar","flow_id":"{ab1674c2-e6c4-4785-8c9f-c61864e44f1f}","glean_timestamp":"1726112690709","widget_id":"stop-reload-button"},"execution_counter":17}
