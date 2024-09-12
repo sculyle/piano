@@ -307,3 +307,12 @@ II 11-09-24 22:05:03.638 - [src/view/xdg-shell.cpp:25] New xdg popup
 II 11-09-24 22:05:11.222 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Mozilla Firefox app-id: firefox
 app_id equals variant: [type: string, value: Kodi]
 II 11-09-24 22:08:24.368 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 11-09-24 22:16:22.095 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 11-09-24 22:19:25.470 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: [6477]@instrument app-id: gcr-prompter
+app_id equals variant: [type: string, value: Kodi]
+II 11-09-24 22:19:29.885 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: [6477]@instrument app-id: gcr-prompter
+app_id equals variant: [type: string, value: Kodi]
+II 11-09-24 22:19:36.837 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: [6477]@instrument app-id: gcr-prompter
+app_id equals variant: [type: string, value: Kodi]
+II 11-09-24 22:19:55.941 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: [6477]@instrument app-id: gcr-prompter
+app_id equals variant: [type: string, value: Kodi]
