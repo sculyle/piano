@@ -3,3 +3,4 @@
 {"timestamp":169030811,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2024-09-09T15:53-05:00","glean_timestamp":"1725915236768"},"execution_counter":14}
 {"timestamp":165804,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2024-09-09T16:17-05:00","glean_timestamp":"1725916653086"},"execution_counter":15}
 {"timestamp":878983,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1725926706621","glean.startup.date":"2024-09-09T19:05-05:00"},"execution_counter":16}
+{"timestamp":108559289,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2024-09-11T22:05-05:00","glean_timestamp":"1726110316871"},"execution_counter":17}

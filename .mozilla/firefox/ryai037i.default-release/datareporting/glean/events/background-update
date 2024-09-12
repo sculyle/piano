@@ -1,1 +1,4 @@
-{"timestamp":878380,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","feature":"addAnImageInPDF","experiment":"add-an-image-to-pdf-with-alt-text-rollout","glean_timestamp":"1725926706018"}}
+{"timestamp":108558656,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"addAnImageInPDF","glean_timestamp":"1726110316239","reason":"invalid-feature","experiment":"add-an-image-to-pdf-with-alt-text-rollout"}}
+{"timestamp":108588074,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"newtab-recommendations-merino-migration","glean_timestamp":"1726110345656"}}
+{"timestamp":108588117,"category":"nimbus_events","name":"unenrollment","extra":{"glean_timestamp":"1726110345699","experiment":"home-and-newtab-wallpapers-v1-rollout-us-and-ca","branch":"control","reason":"recipe-not-seen"}}
+{"timestamp":108588132,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"addAnImageInPDF","reason":"invalid-feature","experiment":"add-an-image-to-pdf-with-alt-text-rollout","glean_timestamp":"1726110345714"}}
