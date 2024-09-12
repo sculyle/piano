@@ -316,3 +316,5 @@ II 11-09-24 22:19:36.837 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable sur
 app_id equals variant: [type: string, value: Kodi]
 II 11-09-24 22:19:55.941 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: [6477]@instrument app-id: gcr-prompter
 app_id equals variant: [type: string, value: Kodi]
+II 11-09-24 22:34:01.260 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 11-09-24 22:34:50.050 - [src/view/xdg-shell.cpp:25] New xdg popup
