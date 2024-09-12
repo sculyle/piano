@@ -1,0 +1,15 @@
+@import url("/usr/share/themes/PiXnoir/gtk-3.0/gtk.css");
+@define-color theme_selected_bg_color #76747C;
+@define-color theme_selected_fg_color #F6F5F4;
+@define-color bar_bg_color #3D3E3F;
+@define-color bar_fg_color #DEDDDA;
+
+scrollbar button {
+	min-width: 13px;
+	min-height: 13px;
+}
+
+scrollbar slider {
+	min-width: 7px;
+	min-height: 7px;
+}

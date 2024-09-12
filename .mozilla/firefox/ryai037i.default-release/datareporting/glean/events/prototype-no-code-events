@@ -1,0 +1,5 @@
+{"timestamp":5200523,"category":"browser.usage","name":"interaction","extra":{"widget_id":"urlbar-input","flow_id":"{82159b3b-1384-4d81-907e-96f43e986178}","source":"nav-bar","glean_timestamp":"1725231439842"},"execution_counter":12}
+{"timestamp":356862,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1725467786693","glean.startup.date":"2024-09-04T11:36-05:00"},"execution_counter":13}
+{"timestamp":169030811,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2024-09-09T15:53-05:00","glean_timestamp":"1725915236768"},"execution_counter":14}
+{"timestamp":165804,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2024-09-09T16:17-05:00","glean_timestamp":"1725916653086"},"execution_counter":15}
+{"timestamp":878983,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1725926706621","glean.startup.date":"2024-09-09T19:05-05:00"},"execution_counter":16}

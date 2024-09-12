@@ -1,0 +1,7 @@
+11:45:46.581 [MainThread] INFO    thonny: Thonny version: 4.1.4
+11:45:46.583 [MainThread] INFO    thonny: cwd: /home/instrumentgroup
+11:45:46.584 [MainThread] INFO    thonny: original argv: ['/usr/bin/python3', '/usr/bin/thonny', '/home/instrumentgroup/Documents/midi_scripts/midi_translation.py']
+11:45:46.585 [MainThread] INFO    thonny: sys.executable: /usr/bin/python3
+11:45:46.585 [MainThread] INFO    thonny: sys.argv: ['/usr/bin/thonny', '/home/instrumentgroup/Documents/midi_scripts/midi_translation.py']
+11:45:46.585 [MainThread] INFO    thonny: sys.path: ['/usr/bin', '/usr/lib/python311.zip', '/usr/lib/python3.11', '/usr/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.11/dist-packages']
+11:45:46.585 [MainThread] INFO    thonny: sys.flags: sys.flags(debug=0, inspect=0, interactive=0, optimize=0, dont_write_bytecode=0, no_user_site=0, no_site=0, ignore_environment=0, verbose=0, bytes_warning=0, quiet=0, hash_randomization=1, isolated=0, dev_mode=False, utf8_mode=0, warn_default_encoding=0, safe_path=False, int_max_str_digits=-1)
