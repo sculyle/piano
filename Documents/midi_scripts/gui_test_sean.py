@@ -3,7 +3,6 @@ from tkinter import ttk
 import subprocess
 import os
 import signal
-import threading
 
 root = tk.Tk()
 
@@ -15,7 +14,6 @@ label.grid(columnspan=1, column=1, row=1)
 enable = 0
 stop = 0
 process = None
-playback_thread = None
 
 def button_func1():
     global enable
@@ -38,45 +36,39 @@ def button_func4():
     currentsong()
 
 def pause():
-    global stop
-    stop = 1
-    currentsong()
+    global process
+    if process:
+        print("Pausing the song.")
+        process.send_signal(signal.SIGUSR1)  # Send signal to pause
+    else:
+        print("No song is currently playing.")
 
 def play():
-    global stop
-    stop = 0
-    currentsong()
+    global process
+    if process:
+        print("Resuming the song.")
+        process.send_signal(signal.SIGUSR2)  # Send signal to resume
+    else:
+        print("No song is currently playing.")
 
 def stop_previous_process():
     """Gracefully stop the previous process if it's running."""
     global process
     if process:
         print("Stopping current process.")
-        process.terminate()
+        process.send_signal(signal.SIGINT)  # Send interrupt signal
         process.wait()  # Wait for process to terminate
         process = None
 
-def run_led_piano_in_thread(midi_file_path):
+def run_led_piano(midi_file_path):
     global process
     stop_previous_process()
     
     print(f"Running led_piano.py with file: {midi_file_path}")
     
-    process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    
-    # Capture output and errors for debugging
-    stdout, stderr = process.communicate()  # Wait for the process to complete and capture the output
-    
-    print(f"Subprocess output: {stdout}")
-    print(f"Subprocess errors: {stderr}")
-
-def run_led_piano(midi_file_path):
-    global playback_thread
-    stop_previous_process()
-
-    # Start a new thread for the MIDI playback
-    playback_thread = threading.Thread(target=run_led_piano_in_thread, args=(midi_file_path,))
-    playback_thread.start()
+    process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path], 
+                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                               preexec_fn=os.setsid)  # Start the process in a new process group
 
 def currentsong():
     global enable, stop

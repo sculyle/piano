@@ -3,6 +3,8 @@ import mido
 import RPi.GPIO as GPIO
 import time
 import sys
+import signal
+import threading
 
 # Map every note in any octave to C4-B4 for your piano (MIDI notes 60-71)
 note_to_pin = {
@@ -25,12 +27,36 @@ def map_note_to_piano(note):
     note_in_c4_range = (note % 12) + 60  # Shifts any octave note to C4-B4 range
     return note_in_c4_range
 
-if __name__ == "__main__":
+paused = False
+playback_position = 0
+pause_event = threading.Event()
+resume_event = threading.Event()
+
+def handle_signal(signum, frame):
+    global paused
+    if signum == signal.SIGUSR1:
+        paused = True
+        pause_event.set()
+        print("Paused")
+    elif signum == signal.SIGUSR2:
+        paused = False
+        resume_event.set()
+        print("Resumed")
+
+def main():
+    global playback_position, paused
+    
+    # Check if the MIDI file path is provided
     if len(sys.argv) > 1:
         midi_file_path = sys.argv[1]
         print(f"Playing MIDI file: {midi_file_path}")
     else:
         print("No MIDI file path provided")
+        sys.exit(1)
+
+    # Check if the file exists
+    if not os.path.isfile(midi_file_path):
+        print(f"File not found: {midi_file_path}")
         sys.exit(1)
 
     # Set up GPIO pins
@@ -39,32 +65,45 @@ if __name__ == "__main__":
         GPIO.setup(pin, GPIO.OUT)
         GPIO.output(pin, GPIO.LOW)
 
-    paused = False
+    # Set signal handlers
+    signal.signal(signal.SIGUSR1, handle_signal)
+    signal.signal(signal.SIGUSR2, handle_signal)
 
     try:
         midi_file = mido.MidiFile(midi_file_path)
         print(f"Loaded MIDI file: {midi_file_path}")
 
-        for msg in midi_file.play():
-            while paused:
-                time.sleep(0.1)  # Wait while paused
+        # Initialize playback
+        playback = midi_file.play()
+
+        while True:
+            if paused:
+                pause_event.wait()  # Wait while paused
+                continue
             
-            if msg.type == 'note_on' and msg.velocity > 0:
-                mapped_note = map_note_to_piano(msg.note)
-                pin = note_to_pin.get(mapped_note)
-                if pin:
-                    GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
-                    print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}")
-                else:
-                    print(f"Note ON: {msg.note} (mapped to {mapped_note}), No GPIO Pin")
-            elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
-                mapped_note = map_note_to_piano(msg.note)
-                pin = note_to_pin.get(mapped_note)
-                if pin:
-                    GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
-                    print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
-                else:
-                    print(f"Note OFF: {msg.note} (mapped to {mapped_note}), No GPIO Pin")
+            try:
+                msg = next(playback)
+                playback_position += msg.time
+
+                if msg.type == 'note_on' and msg.velocity > 0:
+                    mapped_note = map_note_to_piano(msg.note)
+                    pin = note_to_pin.get(mapped_note)
+                    if pin:
+                        GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
+                        print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}")
+                    else:
+                        print(f"Note ON: {msg.note} (mapped to {mapped_note}), No GPIO Pin")
+                elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
+                    mapped_note = map_note_to_piano(msg.note)
+                    pin = note_to_pin.get(mapped_note)
+                    if pin:
+                        GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
+                        print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
+                    else:
+                        print(f"Note OFF: {msg.note} (mapped to {mapped_note}), No GPIO Pin")
+            except StopIteration:
+                # MIDI file playback has finished
+                break
 
     finally:
         for pin in note_to_pin.values():
@@ -72,3 +111,6 @@ if __name__ == "__main__":
         GPIO.cleanup()  # Cleanup GPIO settings after the MIDI file is done playing
         print("\nSong Ended")
         sys.stdout.flush()
+
+if __name__ == "__main__":
+    main()
