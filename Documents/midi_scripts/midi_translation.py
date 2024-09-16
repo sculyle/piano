@@ -6,20 +6,20 @@ import threading
 import sys
 import termios
 import tty
-
+import threading
 
 # Map every note in any octave to C4-B4 for your piano (MIDI notes 60-71)
 note_to_pin = {
-    60: 5,   # C4 (Middle C)
-    61: 6,   # C#4
-    62: 23,  # D4
-    63: 11,  # D#4
-    64: 9,   # E4
+    60: 4,   # C4 (Middle C)
+    61: 17,   # C#4
+    62: 27,  # D4
+    63: 22,  # D#4
+    64: 23,   # E4
     65: 10,  # F4
-    66: 22,  # F#4
-    67: 27,  # G4
-    68: 17,  # G#4
-    69: 4,   # A4
+    66: 9,  # F#4
+    67: 11,  # G4
+    68: 5,  # G#4
+    69: 6,   # A4
     70: 26,  # A#4
     71: 21   # B4
 }
@@ -104,7 +104,7 @@ try:
         while paused:
             time.sleep(0.1)  # Wait while paused
         
-        if msg.type == 'note_on' and msg.velocity > 0:
+        if msg.type == 'note_on' and msg.velocity > 75:
             mapped_note = map_note_to_piano(msg.note)
             pin = note_to_pin.get(mapped_note)
             if pin:
@@ -117,4 +117,12 @@ try:
 finally:
     for pin in note_to_pin.values():
         GPIO.output(pin, GPIO.LOW)  # Turn off all pins
-    GPIO.cleanup()  # Cleanup GPIO settings after the MIDI file is done playing
+    #GPIO.cleanup()  # Cleanup GPIO settings after the MIDI file is done playing
+    print("\nSong Ended")
+    sys.stdout.flush()
+    
+    
+    # End playback
+    #print("\nSong Ended")
+    #termios.tcsetattr(sys.stdin.fileno(), termios.TCSADRAIN, termios.tcgetattr(sys.stdin.fileno()))
+    #sys.stdout.flush()

@@ -155,4 +155,24 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gui_test_sean" added="2024-09-13T22:08:20.450631Z" modified="2024-09-13T22:08:53.182533Z" visited="2024-09-13T22:08:20.450634Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-13T22:08:53.182514Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gui_test_sean.py" added="2024-09-13T22:09:39.996852Z" modified="2024-09-13T22:09:40.059219Z" visited="2024-09-13T22:09:39.996853Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-13T22:09:40.059212Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

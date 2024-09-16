@@ -1,0 +1,117 @@
+import tkinter as tk
+from tkinter import ttk
+import subprocess
+import os
+import signal
+import threading
+
+root = tk.Tk()
+
+canvas = tk.Canvas(root, width=600, height=300)
+canvas.grid(columnspan=8, rowspan=9)
+label = ttk.Label(root, text='Choose Your Song', font=('Calibri', 15))
+label.grid(columnspan=1, column=1, row=1)
+
+enable = 0
+stop = 0
+process = None
+playback_thread = None
+
+def button_func1():
+    global enable
+    enable = 1
+    currentsong()
+
+def button_func2():
+    global enable
+    enable = 2
+    currentsong()
+
+def button_func3():
+    global enable
+    enable = 3
+    currentsong()
+
+def button_func4():
+    global enable
+    enable = 4
+    currentsong()
+
+def pause():
+    global stop
+    stop = 1
+    currentsong()
+
+def play():
+    global stop
+    stop = 0
+    currentsong()
+
+def stop_previous_process():
+    """Gracefully stop the previous process if it's running."""
+    global process
+    if process:
+        print("Stopping current process.")
+        process.terminate()
+        process.wait()  # Wait for process to terminate
+        process = None
+
+def run_led_piano_in_thread(midi_file_path):
+    global process
+    stop_previous_process()
+    
+    print(f"Running led_piano.py with file: {midi_file_path}")
+    
+    process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    
+    # Capture output and errors for debugging
+    stdout, stderr = process.communicate()  # Wait for the process to complete and capture the output
+    
+    print(f"Subprocess output: {stdout}")
+    print(f"Subprocess errors: {stderr}")
+
+def run_led_piano(midi_file_path):
+    global playback_thread
+    stop_previous_process()
+
+    # Start a new thread for the MIDI playback
+    playback_thread = threading.Thread(target=run_led_piano_in_thread, args=(midi_file_path,))
+    playback_thread.start()
+
+def currentsong():
+    global enable, stop
+    if stop == 1:
+        print('Playback is paused')
+        stop_previous_process()
+        return
+
+    if enable == 1:
+        print('Playing Song A')
+        run_led_piano('/home/instrumentgroup/Downloads/Carol.mid')
+    elif enable == 2:
+        print('Playing Song B')
+        run_led_piano('/home/instrumentgroup/Downloads/Pathetique.mid')
+    elif enable == 3:
+        print('Playing Song C')
+        run_led_piano('/home/instrumentgroup/Downloads/wii.mid')
+    elif enable == 4:
+        print('Playing Song D')
+        # Add the path for Song D if available
+
+style = ttk.Style()
+style.configure('TButton', background='white')
+
+button1 = ttk.Button(root, text='Song A', command=button_func1)
+button1.grid(column=1, row=2)
+button2 = ttk.Button(root, text='Song B', command=button_func2)
+button2.grid(column=1, row=3)
+button3 = ttk.Button(root, text='Song C', command=button_func3)
+button3.grid(column=1, row=4)
+button4 = ttk.Button(root, text='Song D', command=button_func4)
+button4.grid(column=1, row=5)
+pauseplz = ttk.Button(root, text='Pause', command=pause)
+pauseplz.grid(column=1, row=6)
+playplz = ttk.Button(root, text='Play', command=play)
+playplz.grid(column=1, row=7)
+
+root.mainloop()

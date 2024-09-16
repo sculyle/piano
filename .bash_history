@@ -174,3 +174,138 @@ cd Documents/midi_scripts
 python3 midi_translation.py
 cd Documents/midi_scripts
 python3 midi_translation.py
+ls
+cd Documents/midi_scripts
+python3 midi_translation.py
+git
+git init
+git status
+git add .
+git commit -m "first commit"
+git config --global user.email "sculyle@gmail.com"
+git config --global user.name "sculyle"
+git commit -m "first commit"
+git push
+git remote add origin https://github.com/sculyle/piano.git
+git status
+git add .
+git commit -m "first commit"
+git push
+git push --set-upstream origin master
+cd ..
+ls
+mkdir test2
+ls
+sudo mkdir test2
+cd test2/
+ls
+git clone https://github.com/sculyle/piano.git
+sudo git clone https://github.com/sculyle/piano.git
+gpg --full-generate-key
+ls
+gpg --list-secret-keys --keyid-format=long
+gpg --armor --export 3BFA15D3477D7A12
+cd ..
+ls
+cd instrumentgroup/
+ls
+git status 
+git commit -a
+git push
+
+cd test2/
+git c
+sudo git clone https://github.com/sculyle/piano.git
+cd ..
+ls
+cd instrumentgroup/
+sudo apt-get install gh
+gh auth
+gh auth 
+gh auth login
+ls
+git add .
+git commit -m "first commit"
+git push
+git push --set-upstream origin master
+gh auth login
+cd ..
+ls
+cd test2/
+ls
+cd ..
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sculyle/piano.git
+git push -u origin main
+ls
+git clone https://github.com/sculyle/ap_csa.git
+cd instrumentgroup/
+sudo git remote add origin https://github.com/sculyle/piano.git
+git branch -M main
+git push -u origin main
+ls
+git add .
+git commit -m "second"
+git push
+ls
+git pull
+cd Documents/midi_scripts
+python3 gpio_off.py
+python3 midi_translation.py
+cd Documents/midi_scripts
+python3 midi_Translation.py
+python3 midi_translation.py
+cd Documents/midi_translation
+cd Documents/midi_scripts
+ls
+python3 midi_translation.py
+jhkldaf
+d
+cd Documents/midi_translation
+d
+ls
+d
+jhkldaf
+python3 midi_translation.py
+python3 gpio_off.py
+python3 midi_translation.py
+apt-get install prompt-toolkit==3.0.10
+sudo apt-get install prompt-toolkit==3.0.10
+cd home
+cd Documents/midi_scripts
+ls
+python3 midi_msg_output.py
+cd Documents/midi_scripts
+python3 midi_translation.py
+cd Documents/midi_scripts
+python3 gpio_off.py
+cd ...
+cd ..
+git auth login
+gh auth login
+cd Documents/midi_scripts
+python3 gpio_off.py
+sudo apt-get install zsh
+ls
+zsh
+cd Documents/midi_scripts
+ls
+python3 midi_translation.py
+cd Documents/midi_scripts
+python3 midi_translation.py
+cd Documents/midi_scripts
+python3 midi_translation.py
+cd Documents/midi_scripts
+python3 midi_translation.py
+sudo apt install python3-keyboard
+pip3 install pynput
+sudo reboot
+cd /Documents/midi_scripts
+cd Documents/midi_scripts
+python3 midi_scripts
+python3 midi_translation.py
+bash python3 midi_translation.py
+bash midi_translation.py

@@ -140,20 +140,20 @@ applications-internet
 lxde-network.directory
 3
 0
--chromium-browser.desktop
+-chromium.desktop
 Chromium Web Browser
 Access the Internet
-chromium-browser
+chromium
 
 9
 Web Browser
-chromium-browser %U
+/usr/bin/chromium %U
 2
 0
 
 
 Network;WebBrowser
-
+browser
 -firefox.desktop
 Firefox
 Browse the World Wide Web
