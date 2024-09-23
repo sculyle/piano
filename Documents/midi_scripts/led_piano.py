@@ -31,6 +31,8 @@ paused = False
 playback_position = 0
 pause_event = threading.Event()
 resume_event = threading.Event()
+max_velocity = 0
+velocity_threshold = 0
 
 def handle_signal(signum, frame):
     global paused
@@ -43,8 +45,17 @@ def handle_signal(signum, frame):
         resume_event.set()
         print("Resumed")
 
+def find_max_velocity(midi_file):
+    """Scan the MIDI file to find the maximum velocity value."""
+    max_velocity = 0
+    for track in midi_file.tracks:
+        for msg in track:
+            if msg.type == 'note_on' and msg.velocity > max_velocity:
+                max_velocity = msg.velocity
+    return max_velocity
+
 def main():
-    global playback_position, paused
+    global playback_position, paused, max_velocity, velocity_threshold
     
     # Check if the MIDI file path is provided
     if len(sys.argv) > 1:
@@ -73,6 +84,11 @@ def main():
         midi_file = mido.MidiFile(midi_file_path)
         print(f"Loaded MIDI file: {midi_file_path}")
 
+        # Find the maximum velocity in the MIDI file
+        max_velocity = find_max_velocity(midi_file)
+        velocity_threshold = max_velocity / 2
+        print(f"Max Velocity: {max_velocity}, Velocity Threshold: {velocity_threshold}")
+
         # Initialize playback
         playback = midi_file.play()
 
@@ -85,22 +101,21 @@ def main():
                 msg = next(playback)
                 playback_position += msg.time
 
-                if msg.type == 'note_on' and msg.velocity > 0:
-                    mapped_note = map_note_to_piano(msg.note)
-                    pin = note_to_pin.get(mapped_note)
-                    if pin:
-                        GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
-                        print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}")
-                    else:
-                        print(f"Note ON: {msg.note} (mapped to {mapped_note}), No GPIO Pin")
-                elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
-                    mapped_note = map_note_to_piano(msg.note)
-                    pin = note_to_pin.get(mapped_note)
-                    if pin:
-                        GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
-                        print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
-                    else:
-                        print(f"Note OFF: {msg.note} (mapped to {mapped_note}), No GPIO Pin")
+                # Only process note messages if they are on channels 1-7 (0-6 in mido)
+                if msg.type in ['note_on', 'note_off'] and 0 <= msg.channel <= 6:
+                    # Filter based on dynamic velocity threshold
+                    if msg.type == 'note_on' and msg.velocity >= velocity_threshold:
+                        mapped_note = map_note_to_piano(msg.note)
+                        pin = note_to_pin.get(mapped_note)
+                        if pin:
+                            GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
+                            print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}, Velocity: {msg.velocity}")
+                    elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
+                        mapped_note = map_note_to_piano(msg.note)
+                        pin = note_to_pin.get(mapped_note)
+                        if pin:
+                            GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
+                            print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
             except StopIteration:
                 # MIDI file playback has finished
                 break

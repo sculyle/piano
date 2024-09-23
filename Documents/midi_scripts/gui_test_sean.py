@@ -3,6 +3,18 @@ from tkinter import ttk
 import subprocess
 import os
 import signal
+import mido
+
+# Function to find max velocity
+def find_max_velocity(midi_file_path):
+    """Scan the MIDI file to find the maximum velocity value."""
+    max_velocity = 0
+    midi_file = mido.MidiFile(midi_file_path)
+    for track in midi_file.tracks:
+        for msg in track:
+            if msg.type == 'note_on' and msg.velocity > max_velocity:
+                max_velocity = msg.velocity
+    return max_velocity
 
 root = tk.Tk()
 
@@ -63,9 +75,13 @@ def stop_previous_process():
 def run_led_piano(midi_file_path):
     global process
     stop_previous_process()
-    
+
     print(f"Running led_piano.py with file: {midi_file_path}")
-    
+
+    # Find and print the max velocity
+    max_velocity = find_max_velocity(midi_file_path)
+    print(f"Max Velocity for {midi_file_path}: {max_velocity}")
+
     process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path], 
                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
                                preexec_fn=os.setsid)  # Start the process in a new process group
