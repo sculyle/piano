@@ -57,12 +57,13 @@ def find_max_velocity(midi_file):
 def main():
     global playback_position, paused, max_velocity, velocity_threshold
     
-    # Check if the MIDI file path is provided
-    if len(sys.argv) > 1:
+    # Check if the MIDI file path and percentage are provided
+    if len(sys.argv) > 2:
         midi_file_path = sys.argv[1]
-        print(f"Playing MIDI file: {midi_file_path}")
+        percentage = float(sys.argv[2])
+        print(f"Playing MIDI file: {midi_file_path} with filtering percentage: {percentage}")
     else:
-        print("No MIDI file path provided")
+        print("No MIDI file path or filtering percentage provided")
         sys.exit(1)
 
     # Check if the file exists
@@ -86,7 +87,7 @@ def main():
 
         # Find the maximum velocity in the MIDI file
         max_velocity = find_max_velocity(midi_file)
-        velocity_threshold = max_velocity / 2
+        velocity_threshold = max_velocity * (percentage / 100)
         print(f"Max Velocity: {max_velocity}, Velocity Threshold: {velocity_threshold}")
 
         # Initialize playback

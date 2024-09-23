@@ -27,6 +27,9 @@ enable = 0
 stop = 0
 process = None
 
+# Variables for user input
+velocity_percentage = tk.DoubleVar(value=50)  # Default value
+
 def button_func1():
     global enable
     enable = 1
@@ -72,17 +75,13 @@ def stop_previous_process():
         process.wait()  # Wait for process to terminate
         process = None
 
-def run_led_piano(midi_file_path):
+def run_led_piano(midi_file_path, percentage):
     global process
     stop_previous_process()
 
-    print(f"Running led_piano.py with file: {midi_file_path}")
+    print(f"Running led_piano.py with file: {midi_file_path} and filtering percentage: {percentage}")
 
-    # Find and print the max velocity
-    max_velocity = find_max_velocity(midi_file_path)
-    print(f"Max Velocity for {midi_file_path}: {max_velocity}")
-
-    process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path], 
+    process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path, str(percentage)], 
                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
                                preexec_fn=os.setsid)  # Start the process in a new process group
 
@@ -93,18 +92,24 @@ def currentsong():
         stop_previous_process()
         return
 
+    percentage = velocity_percentage.get()
     if enable == 1:
         print('Playing Song A')
-        run_led_piano('/home/instrumentgroup/Downloads/Carol.mid')
+        run_led_piano('/home/instrumentgroup/Downloads/Carol.mid', percentage)
     elif enable == 2:
         print('Playing Song B')
-        run_led_piano('/home/instrumentgroup/Downloads/Pathetique.mid')
+        run_led_piano('/home/instrumentgroup/Downloads/Pathetique.mid', percentage)
     elif enable == 3:
         print('Playing Song C')
-        run_led_piano('/home/instrumentgroup/Downloads/wii.mid')
+        run_led_piano('/home/instrumentgroup/Downloads/wii.mid', percentage)
     elif enable == 4:
         print('Playing Song D')
         # Add the path for Song D if available
+
+# Velocity percentage input
+ttk.Label(root, text='Velocity Filter Percentage (0-100):').grid(column=1, row=0)
+velocity_entry = ttk.Entry(root, textvariable=velocity_percentage)
+velocity_entry.grid(column=2, row=0)
 
 style = ttk.Style()
 style.configure('TButton', background='white')
