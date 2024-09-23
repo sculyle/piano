@@ -33,6 +33,7 @@ pause_event = threading.Event()
 resume_event = threading.Event()
 max_velocity = 0
 velocity_threshold = 0
+active_notes = set()  # Track currently active notes
 
 def handle_signal(signum, frame):
     global paused
@@ -55,7 +56,7 @@ def find_max_velocity(midi_file):
     return max_velocity
 
 def main():
-    global playback_position, paused, max_velocity, velocity_threshold
+    global playback_position, paused, max_velocity, velocity_threshold, active_notes
     
     # Check if the MIDI file path and percentage are provided
     if len(sys.argv) > 2:
@@ -104,19 +105,23 @@ def main():
 
                 # Only process note messages if they are on channels 1-7 (0-6 in mido)
                 if msg.type in ['note_on', 'note_off'] and 0 <= msg.channel <= 6:
-                    # Filter based on dynamic velocity threshold
+                    mapped_note = map_note_to_piano(msg.note)
+                    pin = note_to_pin.get(mapped_note)
+
                     if msg.type == 'note_on' and msg.velocity >= velocity_threshold:
-                        mapped_note = map_note_to_piano(msg.note)
-                        pin = note_to_pin.get(mapped_note)
                         if pin:
                             GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
+                            active_notes.add(msg.note)  # Add note to active notes
                             print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}, Velocity: {msg.velocity}")
                     elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
-                        mapped_note = map_note_to_piano(msg.note)
-                        pin = note_to_pin.get(mapped_note)
                         if pin:
                             GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
+                            active_notes.discard(msg.note)  # Remove note from active notes
                             print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
+
+                # Output currently active notes
+                print(f"Currently active notes: {list(active_notes)}")
+
             except StopIteration:
                 # MIDI file playback has finished
                 break
