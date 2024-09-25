@@ -111,6 +111,12 @@ def currentsong():
 
     display()
 
+# Function to handle the slider update
+def slider_update(val):
+    if enable != 0 and stop == 0:
+        print(f"Slider updated, new velocity filter: {val}%")
+        currentsong()  # Automatically play with new percentage
+
 def display():
     global song, enable, canvas
     imagepath = '/home/instrumentgroup/Downloads/loading2.0.png'  # Default image path
@@ -175,7 +181,7 @@ label2.grid(columnspan=6, column=4, row=14)
 velocity_slider_label = tk.Label(root, text="Set Velocity Filter", font=('Ariel', 13), background='white')
 velocity_slider_label.grid(columnspan=6, column=4, row=18)
 
-velocity_slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=velocity_percentage, background='white')
+velocity_slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=velocity_percentage, background='white', command=slider_update)
 velocity_slider.grid(columnspan=6, column=4, row=19)
 
 # Display initial image
