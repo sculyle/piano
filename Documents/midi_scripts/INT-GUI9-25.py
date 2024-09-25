@@ -171,6 +171,13 @@ button4.grid(column=3, row=12)
 label2 = tk.Label(root, text=song, font=('Ariel', 13), background='white')
 label2.grid(columnspan=6, column=4, row=14)
 
+# Velocity Percentage Slider
+velocity_slider_label = tk.Label(root, text="Set Velocity Filter", font=('Ariel', 13), background='white')
+velocity_slider_label.grid(columnspan=6, column=4, row=18)
+
+velocity_slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=velocity_percentage, background='white')
+velocity_slider.grid(columnspan=6, column=4, row=19)
+
 # Display initial image
 display()
 
