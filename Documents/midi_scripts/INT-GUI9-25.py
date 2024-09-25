@@ -60,18 +60,21 @@ def button_func4():
     currentsong()
 
 def pause():
-    global process
+    global process, stop
     if process:
         print("Pausing the song.")
+        stop = 1  # Mark that the song is paused
         process.send_signal(signal.SIGUSR1)  # Send signal to pause
     else:
         print("No song is currently playing.")
 
 def play():
-    global process
+    global process, stop
     if process:
         print("Resuming the song.")
+        stop = 0  # Mark that the song is no longer paused
         process.send_signal(signal.SIGUSR2)  # Send signal to resume
+        currentsong()  # Call currentsong to update with the new percentage
     else:
         print("No song is currently playing.")
 
@@ -113,9 +116,12 @@ def currentsong():
 
 # Function to handle the slider update
 def slider_update(val):
+    global stop
     if enable != 0 and stop == 0:
         print(f"Slider updated, new velocity filter: {val}%")
         currentsong()  # Automatically play with new percentage
+    elif stop == 1:
+        print(f"Slider updated to {val}%, but the song is paused, so it will not restart.")
 
 def display():
     global song, enable, canvas
@@ -181,7 +187,7 @@ label2.grid(columnspan=6, column=4, row=14)
 velocity_slider_label = tk.Label(root, text="Set Velocity Filter", font=('Ariel', 13), background='white')
 velocity_slider_label.grid(columnspan=6, column=4, row=18)
 
-velocity_slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=velocity_percentage, background='white', command=slider_update)
+velocity_slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=velocity_percentage, command=slider_update)
 velocity_slider.grid(columnspan=6, column=4, row=19)
 
 # Display initial image

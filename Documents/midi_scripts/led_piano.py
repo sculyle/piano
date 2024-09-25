@@ -108,7 +108,7 @@ def main():
                     mapped_note = map_note_to_piano(msg.note)
                     pin = note_to_pin.get(mapped_note)
 
-                    if msg.type == 'note_on' and msg.velocity >= velocity_threshold:
+                    if msg.type == 'note_on' and msg.velocity > velocity_threshold:
                         if pin:
                             GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
                             active_notes.add(msg.note)  # Add note to active notes
