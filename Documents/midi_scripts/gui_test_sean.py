@@ -67,7 +67,7 @@ def play():
         print("No song is currently playing.")
 
 def stop_previous_process():
-    """Gracefully stop the previous process if it's running."""
+    """Stop the previous process if it's running."""
     global process
     if process:
         print("Stopping current process.")
