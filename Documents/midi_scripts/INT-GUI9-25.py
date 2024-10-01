@@ -20,7 +20,7 @@ def find_max_velocity(midi_file_path):
 root = tk.Tk()
 root.configure(background='white')
 
-canvas = tk.Canvas(root, width=400, height=400, background='white')
+canvas = tk.Canvas(root, width=600, height=600, background='white')
 canvas.grid(columnspan=20, rowspan=20)
 
 # Song label
@@ -33,6 +33,7 @@ stop = 0
 process = None
 song = 'Select song choice.'
 velocity_percentage = tk.DoubleVar(value=50)  # Default value
+channels_allowed = tk.BooleanVar(value=False)  # Checkbox variable
 
 # Functions for button handling
 def button_func1():
@@ -90,10 +91,14 @@ def run_led_piano(midi_file_path, percentage):
     global process
     stop_previous_process()
 
-    print(f"Running led_piano.py with file: {midi_file_path} and filtering percentage: {percentage}")
-    process = subprocess.Popen(['python3', 'led_piano.py', midi_file_path, str(percentage)], 
+    # Get the state of channels_allowed (assumed to be a boolean)
+    channels_allowed_value = int(channels_allowed.get())  # Convert to 0 or 1
+    print(f"Channels Allowed: {channels_allowed_value}. Running led_piano.py with file: {midi_file_path} and filtering percentage: {percentage}")
+    
+    process = subprocess.Popen(['python3', 'led_piano.py', str(channels_allowed_value), midi_file_path, str(percentage)], 
                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
                                preexec_fn=os.setsid)  # Start the process in a new process group
+
 
 def currentsong():
     percentage = velocity_percentage.get()
@@ -105,10 +110,10 @@ def currentsong():
         run_led_piano('/home/instrumentgroup/Downloads/Carol.mid', percentage)
     elif enable == 3 and stop == 0:
         print('Playing Song C')
-        run_led_piano('/home/instrumentgroup/Downloads/Pathetique.mid', percentage)
+        run_led_piano('/home/instrumentgroup/Downloads/USA.mid', percentage)
     elif enable == 4 and stop == 0:
         print('Playing Song D')
-        # Add path for Song D if available
+        run_led_piano('/home/instrumentgroup/Downloads/BLINK.mid', percentage)
     elif stop == 1:
         print('Song is on Pause')
 
@@ -143,20 +148,20 @@ def display():
     image_og = Image.open(imagepath)
     image_tk = ImageTk.PhotoImage(image_og)
     canvas.image_tk = image_tk
-    canvas.grid(columnspan=6, column=8, row=6)
-    canvas.create_image(8, 4, image=canvas.image_tk, anchor='nw')
+    canvas.grid(columnspan=6, column=13, row=6)
+    canvas.create_image(12, 4, image=canvas.image_tk, anchor='nw')
     label2.config(text=song)
 
 # Play and Pause buttons
 play_image = Image.open('/home/instrumentgroup/Downloads/playbutton.png')
 play_image_tk = ImageTk.PhotoImage(play_image)
 play_button = tk.Button(root, image=play_image_tk, command=play, background='white', borderwidth=0)
-play_button.grid(column=9, row=16)
+play_button.grid(column=11, row=16)
 
 pause_image = Image.open('/home/instrumentgroup/Downloads/pausebutton.png')
 pause_image_tk = ImageTk.PhotoImage(pause_image)
 pause_button = tk.Button(root, image=pause_image_tk, command=pause, background='white', borderwidth=0)
-pause_button.grid(column=8, row=16, padx=(0, 10))
+pause_button.grid(column=10, row=16, padx=(0, 0))
 
 # Song buttons
 button1_image = Image.open('/home/instrumentgroup/Downloads/button_wii-theme(1).png')
@@ -181,14 +186,18 @@ button4.grid(column=3, row=12)
 
 # Label for song title
 label2 = tk.Label(root, text=song, font=('Ariel', 13), background='white')
-label2.grid(columnspan=6, column=4, row=14)
+label2.grid(columnspan=6, column=6, row=14)
 
 # Velocity Percentage Slider
 velocity_slider_label = tk.Label(root, text="Set Velocity Filter", font=('Ariel', 13), background='white')
-velocity_slider_label.grid(columnspan=6, column=4, row=18)
+velocity_slider_label.grid(columnspan=6, column=8, row=18)
 
 velocity_slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=velocity_percentage, command=slider_update)
-velocity_slider.grid(columnspan=6, column=4, row=19)
+velocity_slider.grid(columnspan=6, column=8, row=19)
+
+# Checkbox for channels_allowed
+channels_checkbox = tk.Checkbutton(root, text="Play Only Piano Notes", variable=channels_allowed, background='white')
+channels_checkbox.grid(columnspan=2, column=13, row=20)
 
 # Display initial image
 display()

@@ -1,7 +1,6 @@
 import os
 import mido
 import RPi.GPIO as GPIO
-import time
 import sys
 import signal
 import threading
@@ -58,13 +57,24 @@ def find_max_velocity(midi_file):
 def main():
     global playback_position, paused, max_velocity, velocity_threshold, active_notes
     
-    # Check if the MIDI file path and percentage are provided
-    if len(sys.argv) > 2:
-        midi_file_path = sys.argv[1]
-        percentage = float(sys.argv[2])
+    # Check if the MIDI file path, channels_allowed, and percentage are provided
+    if len(sys.argv) > 3:
+        channels_allowed_value = int(sys.argv[1])  # Convert from string to integer
+        midi_file_path = sys.argv[2]
+        percentage = float(sys.argv[3])
+        print(f"Channels Allowed: {channels_allowed_value}")
         print(f"Playing MIDI file: {midi_file_path} with filtering percentage: {percentage}")
     else:
-        print("No MIDI file path or filtering percentage provided")
+        print("No MIDI file path, channels allowed, or filtering percentage provided")
+        sys.exit(1)
+
+    # Determine channel_select based on channels_allowed_value
+    if channels_allowed_value == 1:
+        channel_select = 6
+    elif channels_allowed_value == 0:
+        channel_select = 15
+    else:
+        print("Invalid channels_allowed_value. It should be either 0 or 15.")
         sys.exit(1)
 
     # Check if the file exists
@@ -103,21 +113,23 @@ def main():
                 msg = next(playback)
                 playback_position += msg.time
 
-                # Only process note messages if they are on channels 1-7 (0-6 in mido)
-                if msg.type in ['note_on', 'note_off'] and 0 <= msg.channel <= 6:
-                    mapped_note = map_note_to_piano(msg.note)
-                    pin = note_to_pin.get(mapped_note)
+                # Modify this part to utilize channel_select
+                if msg.type in ['note_on', 'note_off']:
+                    # Only process note messages if they are on the allowed channels
+                    if 0 <= msg.channel <= channel_select:
+                        mapped_note = map_note_to_piano(msg.note)
+                        pin = note_to_pin.get(mapped_note)
 
-                    if msg.type == 'note_on' and msg.velocity > velocity_threshold:
-                        if pin:
-                            GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
-                            active_notes.add(msg.note)  # Add note to active notes
-                            print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}, Velocity: {msg.velocity}")
-                    elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
-                        if pin:
-                            GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
-                            active_notes.discard(msg.note)  # Remove note from active notes
-                            print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
+                        if msg.type == 'note_on' and msg.velocity > velocity_threshold:
+                            if pin:
+                                GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
+                                active_notes.add(msg.note)  # Add note to active notes
+                                print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}, Velocity: {msg.velocity}")
+                        elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
+                            if pin:
+                                GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
+                                active_notes.discard(msg.note)  # Remove note from active notes
+                                print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
 
                 # Output currently active notes
                 print(f"Currently active notes: {list(active_notes)}")
