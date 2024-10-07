@@ -1,0 +1,212 @@
+diff name:ublock-annoyances lines:3 checksum:860dd211a4
+d4 1
+a4 1
+! Diff-Path: ../patches/2024.10.7.811.patch#ublock-annoyances
+diff name:ublock-badware lines:5 checksum:6728ab757a
+d3 2
+a4 2
+! Last modified: Mon, 07 Oct 2024 10:15:11 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#ublock-badware
+d3835 1
+diff name:ublock-filters lines:50 checksum:eef9d2c911
+d3 2
+a4 2
+! Last modified: Mon, 07 Oct 2024 13:27:52 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#ublock-filters
+d2494 3
+d9083 1
+d9085 4
+a9154 4
+winfuture.de##+js(json-prune, adtagparameter, enabled)
+winfuture.de##[id$="_adContainer"]
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,from=winfuture.de
+@@||widget.spoods.io/loader.js$script,domain=winfuture.de
+d9858 1
+a9858 1
+$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru|hurawatch.art|putlockers.*|roselife.site|roshy.tv|vidsrc.*
+a10561 1
+koramaup.com##[href^="http://u87yuo9ojh.world/"]
+a10585 1
+blog.livedoor.jp##+js(acs, document.addEventListener, google_ad_client)
+d10650 1
+a10650 1
+!#if !cap_html_filtering
+d19576 2
+a19577 2
+*$doc,csp=script-src-attr 'none',to=badmouth1.com|freemcserver.net
+||html-load.com/loader.min.js$domain=badmouth1.com|freemcserver.net
+d19584 1
+a19584 1
+||html-load.com^$redirect=noopjs,domain=carscoops.com|dziennik.pl|eurointegration.com.ua|flatpanelshd.com|fourfourtwo.co.kr|issuya.com|iusm.co.kr|logicieleducatif.fr|mydaily.co.kr|mynet.com|onlinegdb.com|pravda.com.ua|reportera.co.kr|sportsrec.com|sportsseoul.com|taxguru.in|text-compare.com|thesaurus.net|thestar.co.uk|tweaksforgeeks.com|videogamemods.com|wfmz.com|winfuture.de|worldhistory.org|yorkshirepost.co.uk|automobile-catalog.com|motorbikecatalog.com|maketecheasier.com|etnews.com|wort-suchen.de|word-grabber.com|palabr.as|motscroises.fr|cruciverba.it|oradesibiu.ro|w.grapps.me|gazetaprawna.pl|pressian.com
+d19610 1
+a19610 1
+||html-load.com^$script,xhr,domain=blog.esuteru.com|blog.livedoor.jp|itainews.com|hoyme.jp|jin115.com|lamire.jp|picrew.me|ndtvprofit.com|crosswordsolver.com|cruciverba.it|gloria.hr|heureka.cz|javatpoint.com|laleggepertutti.it|m.economictimes.com|meeco.kr|motscroises.fr|oeffnungszeitenbuch.de|ondemandkorea.com|oraridiapertura24.it|palabr.as|suzusoku.blog.jp|the-crossword-solver.com|thestockmarketwatch.com|word-grabber.com|wort-suchen.de|woxikon.*|golf-live.at|motherlyvisions.com|kreuzwortraetsel.de|raetsel-hilfe.de|verkaufsoffener-sonntag.com|horairesdouverture24.fr|nyitvatartas24.hu|modhub.us|ff14net.2chblog.jp|news4vip.livedoor.biz|onecall2ch.com|yugioh-starlight.com|winfuture.de
+d19641 1
+a19641 1
+blog.esuteru.com,blog.livedoor.jp,itainews.com,jin115.com,allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,ff14net.2chblog.jp,heureka.cz,indiatimes.com,laleggepertutti.it,meeco.kr,motscroises.fr,news4vip.livedoor.biz,oeffnungszeitenbuch.de,onecall2ch.com,oraridiapertura24.it,palabr.as,suzusoku.blog.jp,the-crossword-solver.com,thestockmarketwatch.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net,golf-live.at,kreuzwortraetsel.de,raetsel-hilfe.de,verkaufsoffener-sonntag.com,horairesdouverture24.fr,nyitvatartas24.hu,modhub.us,yugioh-starlight.com,winfuture.de##^script:has-text(error-report.com)
+d19647 1
+a19647 1
+blog.esuteru.com,blog.livedoor.jp,itainews.com,jin115.com,allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,ff14net.2chblog.jp,heureka.cz,indiatimes.com,laleggepertutti.it,meeco.kr,motscroises.fr,news4vip.livedoor.biz,oeffnungszeitenbuch.de,onecall2ch.com,oraridiapertura24.it,palabr.as,suzusoku.blog.jp,the-crossword-solver.com,thestockmarketwatch.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net,golf-live.at,kreuzwortraetsel.de,raetsel-hilfe.de,verkaufsoffener-sonntag.com,horairesdouverture24.fr,nyitvatartas24.hu,modhub.us,yugioh-starlight.com,winfuture.de##+js(rmnt, script, error-report.com)
+d21727 1
+a21727 1
+s1os.icu,s4msecurity.com,s920221683.online.de,sabishiidesu.com,saekita.com,samanarthishabd.in,samovies.net,samrudhiglobal.com,sanmiguellive.com,sararun.net,sarkariresult.social,satcesc.com,savegame.pro,sawwiz.com,scansatlanticos.com,schadeck.eu,sezia.com,schildempire.com,scholarshiplist.org,sciencebe21.in,scontianastro.com,scrap-blog.com,scripcheck.great-site.net,scriptsomg.com,searchmovie.wp.xdomain.jp,seasons-dlove.net,seirsanduk.com,seogroup.bookmarking.info,seoworld.in,setsuyakutoushi.com,serieshdpormega.com,server-tutorials.net,serverbd247.com,serverxfans.com,sezia.com,shadagetech.com,shanurdu.com,sheikhmovies.*,shimauma-log.com,shittokuadult.net,shlly.com,shogaisha-shuro.com,shogaisha-techo.com,shopkensaku.com,shorttrick.in,showrovblog.com,shrinklinker.com,shrinkus.tk,shrivardhantech.in,sieradmu.com,siimanga.cyou,siirtolayhaber.com,sim-kichi.monster,sivackidrum.net,sk8therapy.fr,skardu.pk,skidrowreloaded.com,slawoslaw.pl,slowianietworza.pl,smallseotools.ai,smartinhome.pl,snowman-information.com,soccermlbstream.xyz,socebd.com,sociallyindian.com,softcobra.com,softrop.com,sohohindi.com,sosuroda.pl,south-park-tv.biz,soziologie-politik.de,sp500-up.com,space-faucet.com,spacestation-online.com,spardhanews.com,speak-english.net,speculationis.com,spidergame.online,spinoff.link,spiritparting.com,sport-97.com,sportsblend.net,stablediffusionxl.com,stadelahly.net,stahnivideo.cz,stakes100.xyz,starsgtech.in,startupjobsportal.com,ster-blog.xyz,stireazilei.eu,stock-rom.com,streamseeds24.com,strefa.biz,studybullet.com,sufanblog.com,sukuyou.com,sundberg.ws,suneelkevat.com,super-ethanol.com,superpackpormega.com,surgicaltechie.com,swietaslowianskie.pl,sysguides.com,system32.ink##+js(noeval-if, /chp_?ad/)
+d21737 1
+a21737 1
+addtobucketlist.com,alternativa104.net,asumesi.com,ayo24.id,barrier-free.net,berich8.com,bitzite.com,bloooog.it,blurayufr.*,branditechture.agency,chataigpt.org,coinsrev.com,eliobenedetto.it,iamflorianschulze.com,kyoto-kanko.net,limontorrents.com,livenewsof.com,medeberiya1.com,medeberiyax.com,oyundunyasi.net,parrocchiapalata.it,photoshopvideotutorial.com,samovies.net,sulocale.sulopachinews.com,tabering.net,xn--nbkw38mlu2a.com##+js(aopr, adsBlocked)
+d22245 1
+a22245 1
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=watchtv24.com,redirect=google-ima.js
+d23636 1
+a23636 1
+/\.cloudfront\.net\/[a-z]{9,12}\.js$/$script,3p,match-case,domain=marketwatch.com|wsj.com
+diff name:ublock-privacy lines:10 checksum:bc95970725
+d3 2
+a4 2
+! Last modified: Mon, 07 Oct 2024 12:07:02 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#ublock-privacy
+a617 5
+yahoo.com,~mail.yahoo.com##+js(set-attr, img.caas-lazy[data-src]:not([src]), src, [data-src])
+yahoo.com,~mail.yahoo.com##.caas-img-container.caas-img-loader .caas-img:style(opacity: 1 !important;)
+yahoo.com,~mail.yahoo.com##.caas-img-container.caas-img-loader:style(background-color: transparent !important;)
+yahoo.com,~mail.yahoo.com##.caas-img-container.caas-img-loader::after:style(background: unset !important;)
+||gitbook.com/v1/integrations/googleanalytics/
+diff name:ublock-quick-fixes lines:12 checksum:d680b5d355
+d3 2
+a4 2
+! Last modified: Mon, 07 Oct 2024 13:25:40 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#ublock-quick-fixes
+d79 1
+a79 3
+japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{var .{400\,500}\);\}$/)
+japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{[a-z]{3\,5} .{400\,500}\);\}$/)
+japscan.lol##+js(aeld, DOMContentLoaded, (e)=>)
+d113 1
+a113 1
+poophq.com,veev.to##+js(no-xhr-if, adsbygoogle, length:35000-55000)
+diff name:ublock-unbreak lines:32 checksum:00dbc7010c
+d3 2
+a4 2
+! Last modified: Mon, 07 Oct 2024 12:16:25 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#ublock-unbreak
+d8 1
+a8 1
+! START: Click trackings
+d13 1
+a13 3
+@@||track.adtraction.com/*&url=https://www.gog.com/$popup,domain=gamingonlinux.com|isthereanydeal.com|rpgcodex.net
+||track.adtraction.com/*&url=https://www.gog.com/$urlskip=?url
+! END: Click trackings
+d694 2
+d961 1
+d2574 1
+d2607 2
+a2608 2
+@@||www.realclear*/esm/assets/js/analytics/gaAnalytics.js?v=$xhr,1p,strict1p,method=get,domain=com|org
+@@||www.realclear*/esm/assets/js/analytics/chartbeat.js?v=$xhr,1p,strict1p,method=get,domain=com|org
+a2675 3
+!#if env_firefox
+imasdk.googleapis.com##+js(no-xhr-if, worldsurfleague.com, war:noop-vmap1.0.xml)
+!#else
+a2676 1
+!#endif
+d2682 2
+a2688 5
+||marketing.unionpayintl.com/offer-promote/static/sensorsdata.min.js$script,1p,important
+unionpayintl.com##+js(set, sensorsDataAnalytic201505, {})
+unionpayintl.com##+js(set, sensorsDataAnalytic201505.quick, noopFunc)
+||qds.it/wp-content/plugins/digistream/digiplayer/js/videojs.ga.js?$script,1p,redirect=noopjs,important
+||qds.it^$script,1p,redirect-rule=noopjs
+diff name:easylist lines:21 checksum:74032dc365
+d4 2
+a5 2
+! Last modified: Mon, 07 Oct 2024 13:05:54 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#easylist
+a54224 1
+||11778562.xyz^$document,popup
+a61311 1
+||attr-shift.dotabuff.com^
+a63036 1
+hulkshare.com###ad_user_banner_2
+d65010 1
+a65010 1
+benzinga.com,primewire.link##.banner-wrapper
+a68591 1
+hulkshare.com##a.nhsIndexPromoteBlock
+a69350 1
+fandomwire.com##div:has(> [data-openweb-ad])
+a69543 1
+express.co.uk###mantis-recommender-top-placeholder
+a69620 1
+dpreview.com##.videoWrapper
+diff name:easyprivacy lines:21 checksum:5b4be192b7
+d4 2
+a5 2
+! Last modified: Mon, 07 Oct 2024 06:52:03 +0000
+! Diff-Path: ../patches/2024.10.7.811.patch#easyprivacy
+d5331 1
+a9593 1
+||api.sardine.ai/assets/loader.min.js
+d13263 3
+d13268 1
+a13268 1
+||academia.edu/record_hit?
+d13343 1
+d13408 1
+a13408 1
+||assets.prod.abebookscdn.com/cdn/com/scripts/abepixel-$domain=abebooks.com
+d13940 1
+d14283 1
+d14640 1
+d14866 1
+a14866 1
+||wolfram.com/common/javascript/wal/latest/walLoad.js
+[‡ôÇK      gUgUGgº"g:"   ]    ~FETCH,:https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/patches/2024.10.6.1345.patch strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br, zstd response-head HTTP/2 200 
+date: Mon, 07 Oct 2024 16:54:45 GMT
+content-type: application/octet-stream
+content-length: 10046
+access-control-allow-origin: *
+access-control-expose-headers: *
+timing-allow-origin: *
+cache-control: public, max-age=604800, s-maxage=43200
+cross-origin-resource-policy: cross-origin
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-jsd-version: main
+x-jsd-version-type: branch
+etag: W/"273e-RJXQvUeLelpKchS2nWA2yypSptE"
+x-served-by: cache-fra-etou8220061-FRA, cache-lga21924-LGA
+x-cache: HIT, HIT
+vary: Accept-Encoding
+cf-cache-status: HIT
+age: 4787
+accept-ranges: bytes
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=AzGfHOvE4bvKxlYhiMB%2BMr7oYOT9BzJhLWM%2BBxBYXcyr6Okh1W3GWKXs22SgI50HoMv2EN8a7RpReeOBaLggjTtA5q3mJkdfM7sZ1qnNKwThj5FDXkYa9Q%2FJQD9uSjKM51g%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+server: cloudflare
+cf-ray: 8cef6a38dffce71a-DFW
+X-Firefox-Spdy: h2
+ original-response-headers date: Mon, 07 Oct 2024 16:54:45 GMT
+content-type: application/octet-stream
+content-length: 10046
+access-control-allow-origin: *
+access-control-expose-headers: *
+timing-allow-origin: *
+cache-control: public, max-age=604800, s-maxage=43200
+cross-origin-resource-policy: cross-origin
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-jsd-version: main
+x-jsd-version-type: branch
+etag: W/"273e-RJXQvUeLelpKchS2nWA2yypSptE"
+x-served-by: cache-fra-etou8220061-FRA, cache-lga21924-LGA
+x-cache: HIT, HIT
+vary: Accept-Encoding
+cf-cache-status: HIT
+age: 4787
+accept-ranges: bytes
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=AzGfHOvE4bvKxlYhiMB%2BMr7oYOT9BzJhLWM%2BBxBYXcyr6Okh1W3GWKXs22SgI50HoMv2EN8a7RpReeOBaLggjTtA5q3mJkdfM7sZ1qnNKwThj5FDXkYa9Q%2FJQD9uSjKM51g%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+server: cloudflare
+cf-ray: 8cef6a38dffce71a-DFW
+X-Firefox-Spdy: h2
+ ctid 1 net-response-time-onstart 251 net-response-time-onstop 262   '>

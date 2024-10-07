@@ -1,0 +1,3 @@
+{"timestamp":73776490,"category":"nimbus_events","name":"enrollment","extra":{"experiment_type":"rollout","glean_timestamp":"1728316460758","branch":"control","experiment":"disable-ads-startup-cache"}}
+{"timestamp":73776687,"category":"nimbus_events","name":"validation_failed","extra":{"glean_timestamp":"1728316460955","reason":"invalid-feature","feature":"addAnImageInPDF","experiment":"add-an-image-to-pdf-with-alt-text-rollout"}}
+{"timestamp":73795094,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"addAnImageInPDF","glean_timestamp":"1728316479362","experiment":"add-an-image-to-pdf-with-alt-text-rollout","reason":"invalid-feature"}}

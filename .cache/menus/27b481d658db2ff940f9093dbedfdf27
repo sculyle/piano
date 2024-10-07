@@ -424,6 +424,20 @@ lxsession-logout
 
 
 
+-notification-daemon.desktop
+Notification Daemon
+Display notifications
+
+
+9
+
+/usr/lib/notification-daemon/notification-daemon
+4
+0
+
+
+
+
 -obconf.desktop
 
 

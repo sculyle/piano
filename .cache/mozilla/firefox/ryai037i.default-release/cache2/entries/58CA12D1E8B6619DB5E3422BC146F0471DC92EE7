@@ -1,0 +1,131 @@
+diff name:ublock-annoyances lines:3 checksum:6d60f4adc7
+d4 1
+a4 1
+! Diff-Path: ../patches/2024.9.17.206.patch#ublock-annoyances
+diff name:ublock-badware lines:3 checksum:c2cfbba992
+d4 1
+a4 1
+! Diff-Path: ../patches/2024.9.17.206.patch#ublock-badware
+diff name:ublock-filters lines:10 checksum:d150a12a32
+d3 2
+a4 2
+! Last modified: Tue, 17 Sep 2024 02:02:37 +0000
+! Diff-Path: ../patches/2024.9.17.206.patch#ublock-filters
+a20170 5
+ssyou.tube##+js(acs, EventTarget.prototype.addEventListener, delete window)
+apimate.net##+js(aeld, click, window.open)
+apimate.net##+js(nowoif)
+||apimate.net/ads.js^
+||awkwardemergency.com^
+diff name:ublock-privacy lines:7 checksum:766da9809f
+d3 2
+a4 2
+! Last modified: Tue, 17 Sep 2024 03:12:52 +0000
+! Diff-Path: ../patches/2024.9.17.206.patch#ublock-privacy
+a602 2
+*$all,ipaddress=0.0.0.0,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
+*$all,ipaddress=::,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
+diff name:ublock-quick-fixes lines:5 checksum:fb5b265ebb
+d3 2
+a4 2
+! Last modified: Tue, 17 Sep 2024 03:02:14 +0000
+! Diff-Path: ../patches/2024.9.17.206.patch#ublock-quick-fixes
+d163 1
+diff name:ublock-unbreak lines:3 checksum:90cce74a42
+d4 1
+a4 1
+! Diff-Path: ../patches/2024.9.17.206.patch#ublock-unbreak
+diff name:easylist lines:26 checksum:1bcb311cc0
+d4 2
+a5 2
+! Last modified: Tue, 17 Sep 2024 01:39:48 +0000
+! Diff-Path: ../patches/2024.9.17.206.patch#easylist
+d61661 1
+a61661 1
+/^https?:\/\/[0-9a-z]{5,}\.com\/.*/$script,third-party,xmlhttprequest,domain=123movies.tw|1cloudfile.com|745mingiestblissfully.com|9xupload.asia|adblockeronstape.me|adblockeronstreamtape.me|adblockeronstrtape.xyz|adblockplustape.xyz|adblockstreamtape.art|adblockstreamtape.fr|adblockstreamtape.site|adblocktape.online|adblocktape.store|adblocktape.wiki|advertisertape.com|anonymz.com|antiadtape.com|audaciousdefaulthouse.com|bowfile.com|clickndownload.click|clicknupload.space|clicknupload.to|cloudvideo.tv|cr7sports.us|cuervotv.me|d000d.com|daddylivehd.sx|dailyuploads.net|databasegdriveplayer.xyz|deltabit.co|dlhd.sx|dood.la|dood.li|dood.pm|dood.re|dood.sh|dood.so|dood.to|dood.watch|dood.wf|dood.ws|dood.yt|doods.pro|dooood.com|dramacool.sr|drivebuzz.icu|ds2play.com|embedplayer.site|embedsb.com|embedsito.com|embedstream.me|engvideo.net|enjoy4k.xyz|eplayvid.net|evoload.io|fembed-hd.com|filemoon.sx|files.im|filmy4wap.ink|flexy.stream|fmovies.ps|gamovideo.com|gaybeeg.info|gdriveplayer.pro|gettapeads.com|givemenbastreams.com|gogoanimes.org|gogohd.net|goload.io|gomo.to|greaseball6eventual20.com|hdtoday.ru|hexload.com|hexupload.net|imgtraffic.com|kesini.in|kickassanime.mx|kickasstorrents.to|linkhub.icu|lookmyimg.com|mangareader.cc|mangareader.to|maxsport.one|membed.net|meomeo.pw|mirrorace.org|mixdroop.co|mixdrop.ag|mixdrop.bz|mixdrop.click|mixdrop.club|mixdrop.ms|mixdrop.nu|mixdrop.ps|mixdrop.si|mixdrop.sx|mixdrop.to|mixdrops.xyz|mixdrp.co|movies2watch.tv|mp4upload.com|nelion.me|noblocktape.com|nsw2u.org|olympicstreams.co|onlinevideoconverter.com|ovagames.com|pahaplayers.click|papahd.club|pcgamestorrents.com|pouvideo.cc|proxyer.org|putlocker-website.com|reputationsheriffkennethsand.com|rintor.space|rojadirecta1.site|scloud.online|send.cm|sflix.to|shavetape.cash|skidrowcodex.net|smallencode.me|soccerstreamslive.co|sportshighlights.club|stapadblockuser.art|stapadblockuser.click|stapadblockuser.info|stapadblockuser.xyz|stape.fun|stapewithadblock.beauty|stapewithadblock.monster|stapewithadblock.xyz|strcloud.in|streamadblocker.cc|streamadblocker.com|streamadblocker.store|streamadblocker.xyz|streamingsite.net|streamlare.com|streamnoads.com|streamta.pe|streamta.site|streamtape.cc|streamtape.com|streamtape.to|streamtape.xyz|streamtapeadblock.art|streamtapeadblockuser.art|streamtapeadblockuser.homes|streamtapeadblockuser.monster|streamtapeadblockuser.xyz|strikeout.ws|strtape.cloud|strtape.tech|strtapeadblock.club|strtapeadblocker.xyz|strtapewithadblock.art|strtapewithadblock.xyz|supervideo.tv|tapeadsenjoyer.com|tapeadvertisement.com|tapeantiads.com|tapeblocker.com|tapenoads.com|tapewithadblock.com|tapewithadblock.org|thepiratebay0.org|thepiratebay10.xyz|theproxy.ws|thevideome.com|toxitabellaeatrebates306.com|un-block-voe.net|upbam.org|upload-4ever.com|upload.do|uproxy.to|upstream.to|uqload.co|uqload.io|userscloud.com|v-o-e-unblock.com|vidbam.org|vido.lol|vidshar.org|vidsrc.me|vidsrc.stream|vipleague.im|vipleague.st|voe-unblock.net|voe.bar|voe.sx|vudeo.io|vudeo.net|vumoo.to|yesmovies.mn|youtube4kdownloader.com
+d61892 1
+a61892 1
+$popup,third-party,domain=1337x.buzz|720pstream.tv|adblockeronstape.me|adblockeronstreamtape.me|adblockeronstrtape.xyz|adblockplustape.com|adblockplustape.xyz|adblockstreamtape.art|adblockstreamtape.fr|adblockstreamtape.site|adblocktape.online|adblocktape.store|adblocktape.wiki|advertisertape.com|animepl.xyz|animeworld.biz|antiadtape.com|atrocidades18.net|cloudemb.com|cloudvideo.tv|d000d.com|databasegdriveplayer.xyz|dembed1.com|diampokusy.com|dir-proxy.net|dirproxy.info|dood.la|dood.li|dood.pm|dood.re|dood.sh|dood.so|dood.to|dood.watch|dood.wf|dood.ws|dood.yt|doods.pro|dooood.com|ds2play.com|embedsito.com|fembed-hd.com|file-upload.com|filemoon.sx|freeplayervideo.com|geoip.redirect-ads.com|gettapeads.com|gogoanime.lol|gogoanime.nl|haes.tech|highstream.tv|hubfiles.ws|hydrax.xyz|katfile.com|kissanime.lol|kokostream.net|livetv498.me|loader.to|luluvdo.com|luxubu.review|mixdroop.co|mixdrop.ag|mixdrop.bz|mixdrop.click|mixdrop.club|mixdrop.ms|mixdrop.nu|mixdrop.ps|mixdrop.si|mixdrop.sx|mixdrop.to|mixdrops.xyz|mixdrp.co|mixdrp.to|monstream.org|noblocktape.com|okru.link|oneproxy.org|piracyproxy.biz|piraproxy.info|pixroute.com|playtube.ws|pomvideo.cc|pouvideo.cc|projectfreetv2.com|proxyer.org|raes.tech|sbfast.com|sbplay2.com|sbplay2.xyz|sbthe.com|scloud.online|shavetape.cash|slmaxed.com|ssbstream.net|stapadblockuser.info|stapadblockuser.xyz|stape.fun|stape.me|stapewithadblock.beauty|stapewithadblock.monster|stapewithadblock.xyz|strcloud.in|streamadblocker.cc|streamadblocker.com|streamadblocker.store|streamadblocker.xyz|streamhide.to|streamingcommunity.life|streamlare.com|streamnoads.com|streamta.pe|streamtape.cc|streamtape.com|streamtape.to|streamtape.xyz|streamtapeadblock.art|streamtapeadblockuser.art|streamtapeadblockuser.homes|streamtapeadblockuser.monster|streamtapeadblockuser.xyz|streamtapse.com|streamz.ws|strtape.cloud|strtapeadblocker.xyz|strtapewithadblock.art|strtapewithadblock.xyz|strtpe.link|supervideo.tv|suzihaza.com|tapeadsenjoyer.com|tapeadvertisement.com|tapeantiads.com|tapeblocker.com|tapelovesads.org|tapenoads.com|tapewithadblock.com|tapewithadblock.org|theproxy.ws|trafficdepot.xyz|tubeload.co|un-block-voe.net|uploadfiles.pw|uproxy.co|upstream.to|upvid.biz|uqload.com|userload.co|vanfem.com|vgfplay.com|vidcloud9.com|vidlox.me|viewsb.com|vivo.sx|voe-unblock.com|voe-unblock.net|voe.sx|voeunblock1.com|voeunblock2.com|voiranime.com|watchsb.com|welovemanga.one|wiztube.xyz|wootly.ch|y2mate.is|youtubedownloader.sh|ytmp3.cc|ytmp3.sh
+a64694 1
+livescores.biz##.banner-slot
+d64875 1
+a64875 1
+azscore.com,livescores.biz##.bonus-offers-container
+a64889 1
+livescores.biz##.bottom-bk-links
+a65642 1
+livescores.biz##.get-bonus
+a66505 1
+livescores.biz##.odds-market
+a66697 1
+livescores.biz##.predict_bet
+d67724 1
+a67724 1
+4sysops.com,9to5linux.com,backthetruckup.com,catcountry941.com,cnx-software.com,corrosionhour.com,corvetteblogger.com,dailyveracity.com,dcrainmaker.com,discover.is,fastestvpns.com,gamingonphone.com,girgitnews.com,gizmochina.com,guides.wp-bullet.com,iwatchsouthparks.com,macsources.com,mediachomp.com,metalsucks.net,mmoculture.com,nasaspaceflight.com,openloading.com,patriotfetch.com,planetofreviews.com,precinctreporter.com,prepperwebsite.com,sashares.co.za,scienceabc.com,scienceandliteracy.org,spokesman-recorder.com,survivopedia.com,techdows.com,techiecorner.com,techjuice.pk,theblueoceansgroup.com,thecinemaholic.com,tooxclusive.com,torrentfreak.com,torrentmac.net,trackalerts.com,trendingpoliticsnews.com,wabetainfo.com##.widget_custom_html
+diff name:easyprivacy lines:18 checksum:122b738ef6
+d4 2
+a5 2
+! Last modified: Tue, 17 Sep 2024 01:39:48 +0000
+! Diff-Path: ../patches/2024.9.17.206.patch#easyprivacy
+a3334 1
+||mngusr.com^
+a8447 1
+||digistats.de^$third-party
+a10008 1
+||cta-service-cms2.hubspot.com^
+a13066 1
+||test.legitcode.ws^
+a13248 1
+||advertisertape.com/stat/
+a14597 1
+||terabox.com/nodeapi/reporterror?
+a52289 1
+||data.acierto.com^
+2©Þ•ùO      fèúBfèúBGTòjfèúS   N    ~FETCH,:https://ublockorigin.github.io/uAssetsCDN/patches/2024.9.16.1343.patch strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br, zstd response-head HTTP/2 200 
+server: GitHub.com
+content-type: application/octet-stream
+permissions-policy: interest-cohort=()
+x-origin-cache: HIT
+last-modified: Tue, 17 Sep 2024 03:27:31 GMT
+access-control-allow-origin: *
+etag: "66e8f723-20d9"
+expires: Tue, 17 Sep 2024 03:37:35 GMT
+cache-control: max-age=600
+x-proxy-cache: HIT
+x-github-request-id: AC45:A8969:4A17C07:53C2E51:66E8F7DA
+accept-ranges: bytes
+date: Tue, 17 Sep 2024 03:40:50 GMT
+via: 1.1 varnish
+age: 583
+x-served-by: cache-dfw-kdal2120048-DFW
+x-cache: HIT
+x-cache-hits: 4
+x-timer: S1726544451.753328,VS0,VE0
+vary: Accept-Encoding
+x-fastly-request-id: 7c33328402772000fd7a27878e1e811a3c118e1d
+content-length: 8409
+X-Firefox-Spdy: h2
+ original-response-headers server: GitHub.com
+content-type: application/octet-stream
+permissions-policy: interest-cohort=()
+x-origin-cache: HIT
+last-modified: Tue, 17 Sep 2024 03:27:31 GMT
+access-control-allow-origin: *
+etag: "66e8f723-20d9"
+expires: Tue, 17 Sep 2024 03:37:35 GMT
+cache-control: max-age=600
+x-proxy-cache: HIT
+x-github-request-id: AC45:A8969:4A17C07:53C2E51:66E8F7DA
+accept-ranges: bytes
+date: Tue, 17 Sep 2024 03:40:50 GMT
+via: 1.1 varnish
+age: 583
+x-served-by: cache-dfw-kdal2120048-DFW
+x-cache: HIT
+x-cache-hits: 4
+x-timer: S1726544451.753328,VS0,VE0
+vary: Accept-Encoding
+x-fastly-request-id: 7c33328402772000fd7a27878e1e811a3c118e1d
+content-length: 8409
+X-Firefox-Spdy: h2
+ ctid 1 net-response-time-onstart 100 net-response-time-onstop 107    Ù

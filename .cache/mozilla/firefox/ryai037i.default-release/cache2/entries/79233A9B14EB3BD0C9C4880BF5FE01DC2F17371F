@@ -1,0 +1,131 @@
+diff name:ublock-annoyances lines:3 checksum:adcfa25896
+d4 1
+a4 1
+! Diff-Path: ../patches/2024.9.18.269.patch#ublock-annoyances
+diff name:ublock-badware lines:7 checksum:9f7ed1339a
+d3 2
+a4 2
+! Last modified: Wed, 18 Sep 2024 02:43:04 +0000
+! Diff-Path: ../patches/2024.9.18.269.patch#ublock-badware
+a4259 2
+||feather-wallet.org^$doc,to=~featherwallet.org
+||sparrowwallet.net^$doc,to=~sparrowwallet.com
+diff name:ublock-filters lines:15 checksum:2172f5f969
+d3 2
+a4 2
+! Last modified: Wed, 18 Sep 2024 03:02:11 +0000
+! Diff-Path: ../patches/2024.9.18.269.patch#ublock-filters
+a10543 1
+||mymembermatchmagic.life^
+d19569 1
+a19569 1
+||html-load.com/loader.min.js$domain=ndtvprofit.com|crosswordsolver.com|cruciverba.it|gloria.hr|heureka.cz|javatpoint.com|meeco.kr|motscroises.fr|oeffnungszeitenbuch.de|oraridiapertura24.it|palabr.as|the-crossword-solver.com|word-grabber.com|wort-suchen.de|woxikon.*
+d19593 1
+a19593 1
+allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,heureka.cz,indiatimes.com,meeco.kr,motscroises.fr,oeffnungszeitenbuch.de,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net##^script:has-text(error-report.com)
+d19598 1
+a19598 1
+allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,heureka.cz,indiatimes.com,meeco.kr,motscroises.fr,oeffnungszeitenbuch.de,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net##+js(rmnt, script, error-report.com)
+diff name:ublock-privacy lines:17 checksum:fc62bd4606
+d3 2
+a4 2
+! Last modified: Wed, 18 Sep 2024 03:03:38 +0000
+! Diff-Path: ../patches/2024.9.18.269.patch#ublock-privacy
+d122 5
+a126 5
+loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,thestockmarketwatch.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,javatpoint.com,lamire.jp,bamgosu.site,allthekingz.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,flatpanelshd.com,videogamemods.com,adintrend.tv,ark-unity.com,cool-style.com.tw,dziennik.pl,eurointegration.com.ua,winfuture.de,freemcserver.net,pravda.com.ua,infinityfree.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,dramabeans.com,mynet.com,sportsseoul.com,smsonline.cloud,meeco.kr,heureka.cz,slobodnadalmacija.hr,crosswordsolver.com,cruciverba.it,gloria.hr,missyusa.com,motscroises.fr,oeffnungszeitenbuch.de,oradesibiu.ro,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*##+js(set-local-storage-item, adshield-analytics-uuid, $remove$)
+loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,thestockmarketwatch.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,javatpoint.com,lamire.jp,bamgosu.site,allthekingz.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,flatpanelshd.com,videogamemods.com,adintrend.tv,ark-unity.com,cool-style.com.tw,dziennik.pl,eurointegration.com.ua,winfuture.de,freemcserver.net,pravda.com.ua,infinityfree.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,dramabeans.com,mynet.com,sportsseoul.com,smsonline.cloud,meeco.kr,heureka.cz,slobodnadalmacija.hr,crosswordsolver.com,cruciverba.it,gloria.hr,missyusa.com,motscroises.fr,oeffnungszeitenbuch.de,oradesibiu.ro,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*##+js(set-local-storage-item, /_fa_dXVpZA==$/, $remove$)
+loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,thestockmarketwatch.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,javatpoint.com,lamire.jp,bamgosu.site,allthekingz.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,flatpanelshd.com,videogamemods.com,adintrend.tv,ark-unity.com,cool-style.com.tw,dziennik.pl,eurointegration.com.ua,winfuture.de,freemcserver.net,pravda.com.ua,infinityfree.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,dramabeans.com,mynet.com,sportsseoul.com,smsonline.cloud,meeco.kr,heureka.cz,slobodnadalmacija.hr,crosswordsolver.com,cruciverba.it,gloria.hr,missyusa.com,motscroises.fr,oeffnungszeitenbuch.de,oradesibiu.ro,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*##+js(set-local-storage-item, /_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWNjZXB0YWJsZV9hZHM=$/, $remove$)
+loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,thestockmarketwatch.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,javatpoint.com,lamire.jp,bamgosu.site,allthekingz.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,flatpanelshd.com,videogamemods.com,adintrend.tv,ark-unity.com,cool-style.com.tw,dziennik.pl,eurointegration.com.ua,winfuture.de,freemcserver.net,pravda.com.ua,infinityfree.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,dramabeans.com,mynet.com,sportsseoul.com,smsonline.cloud,meeco.kr,heureka.cz,slobodnadalmacija.hr,crosswordsolver.com,cruciverba.it,gloria.hr,missyusa.com,motscroises.fr,oeffnungszeitenbuch.de,oradesibiu.ro,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*##+js(set-local-storage-item, /_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWRz$/, $remove$)
+loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,thestockmarketwatch.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,javatpoint.com,lamire.jp,bamgosu.site,allthekingz.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,flatpanelshd.com,videogamemods.com,adintrend.tv,ark-unity.com,cool-style.com.tw,dziennik.pl,eurointegration.com.ua,winfuture.de,freemcserver.net,pravda.com.ua,infinityfree.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,dramabeans.com,mynet.com,sportsseoul.com,smsonline.cloud,meeco.kr,heureka.cz,slobodnadalmacija.hr,crosswordsolver.com,cruciverba.it,gloria.hr,missyusa.com,motscroises.fr,oeffnungszeitenbuch.de,oradesibiu.ro,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*##+js(set-local-storage-item, /_fa_Y2FjaGVfYWRibG9ja19jaXJjdW12ZW50X3Njb3Jl$/, $remove$)
+d385 1
+a385 1
+! $removeparam=_hsenc
+d602 1
+a602 1
+nytimes.com##+js(no-fetch-if, api.theathletic.com/graphql body:/PostEvent|PostImpressions/)
+diff name:ublock-quick-fixes lines:9 checksum:ddf76222f6
+d3 2
+a4 2
+! Last modified: Wed, 18 Sep 2024 01:57:24 +0000
+! Diff-Path: ../patches/2024.9.18.269.patch#ublock-quick-fixes
+d23 1
+a23 1
+www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), "YOUTUBE_PREMIUM_LOGO"!==ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType&&(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/")||document.addEventListener("DOMContentLoaded"\,(function(){const t=()=>{const t=document.getElementById("movie_player");if(!t)return;if(!t.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD"))return;const e=t.getProgressState?.();e&&e.duration>0&&e.loaded<e.duration&&t.seekTo?.(e.duration)};t()\,new MutationObserver((()=>{t()})).observe(document\,{childList:!0\,subtree:!0})})));(function serverContract(), sedCount, 1)
+a167 1
+youtube.com#@#+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1, domain, youtube.com)
+diff name:ublock-unbreak lines:7 checksum:09db95fd22
+d3 2
+a4 2
+! Last modified: Tue, 17 Sep 2024 23:57:03 +0000
+! Diff-Path: ../patches/2024.9.18.269.patch#ublock-unbreak
+d2152 1
+a2152 1
+javgg.net##.home_iframead:has(> iframe)
+diff name:easylist lines:33 checksum:441bb8c8c2
+d4 2
+a5 2
+! Last modified: Wed, 18 Sep 2024 02:02:40 +0000
+! Diff-Path: ../patches/2024.9.18.269.patch#easylist
+d257 1
+a257 1
+/ads/cbr.js$script
+a15738 1
+honor.com#@#.ad-section
+a15743 1
+honor.com#@#.ad-wrap:not(#google_ads_iframe_checktag)
+a21082 1
+||boydomsince.shop^
+a30923 1
+||ibuvwwquvrd.com^
+a31831 1
+||irmyckddtm.com^
+a33284 1
+||kotzzdwl.com^
+a34216 1
+||loanxas.xyz^
+a35149 1
+||meatjav11.fun^
+a38417 1
+||ouvertrenewed.com^
+a41853 1
+||recedechatprotestant.com^
+a47297 1
+||tricedendplay.click^
+a51223 1
+||ytoqgrxemracv.com^
+a70028 1
+camwhores.tv##.fh-line
+diff name:easyprivacy lines:3 checksum:c2b3d6b18b
+d5 1
+a5 1
+! Diff-Path: ../patches/2024.9.18.269.patch#easyprivacy
+ðh“ö;!      fêgõfêgõGUïåfêgõ   C    ~FETCH,:https://ublockorigin.pages.dev/patches/2024.9.17.1406.patch strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br, zstd response-head HTTP/3 200 
+date: Wed, 18 Sep 2024 05:41:09 GMT
+content-type: application/octet-stream
+content-length: 10040
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "1490093dafc99e67d10cdd9616c25d61"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=q3seqr4w2qBCvWBp5vh9w8k0Dx4GUuO5TdSA6lsAq41XKwDpZyF%2Fxnn7Qmh9bFj1GFj4Znquhph8GzPEB9CZqaOltaGUi8kK09pGmcO9DkVZlgyPN7ybWUjPPPNy%2BZbBYZdikjtuCJSD"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+vary: Accept-Encoding
+server: cloudflare
+cf-ray: 8c4f015e5ca42e2d-DFW
+X-Firefox-Http3: h3
+ original-response-headers date: Wed, 18 Sep 2024 05:41:09 GMT
+content-type: application/octet-stream
+content-length: 10040
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "1490093dafc99e67d10cdd9616c25d61"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=q3seqr4w2qBCvWBp5vh9w8k0Dx4GUuO5TdSA6lsAq41XKwDpZyF%2Fxnn7Qmh9bFj1GFj4Znquhph8GzPEB9CZqaOltaGUi8kK09pGmcO9DkVZlgyPN7ybWUjPPPNy%2BZbBYZdikjtuCJSD"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+vary: Accept-Encoding
+server: cloudflare
+cf-ray: 8c4f015e5ca42e2d-DFW
+ ctid 1 net-response-time-onstart 94 net-response-time-onstop 101   '8

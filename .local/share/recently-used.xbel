@@ -3,13 +3,13 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/instrumentgroup/Documents/test_scripts/print_test.py" added="2024-08-30T02:26:10.068100Z" modified="2024-08-30T02:34:41.896827Z" visited="2024-08-30T02:26:10.068106Z">
+  <bookmark href="file:///home/instrumentgroup/Documents/test_scripts/print_test.py" added="2024-08-30T02:26:10.068100Z" modified="2024-10-01T05:38:25.122893Z" visited="2024-08-30T02:26:10.068106Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-python"/>
         <bookmark:applications>
           <bookmark:application name="zenity" exec="&apos;zenity %u&apos;" modified="2024-08-30T02:26:10.068116Z" count="1"/>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-08-30T02:34:41.896822Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-01T05:38:25.122889Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -105,12 +105,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/midi_msg_output.py" added="2024-09-07T22:51:47.860848Z" modified="2024-09-07T22:51:47.860865Z" visited="2024-09-07T22:51:47.860851Z">
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/midi_msg_output.py" added="2024-09-07T22:51:47.860848Z" modified="2024-10-01T05:38:28.672615Z" visited="2024-09-07T22:51:47.860851Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-python"/>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-07T22:51:47.860859Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-01T05:38:28.672608Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -145,12 +145,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gui_test.py" added="2024-09-10T00:09:35.344951Z" modified="2024-09-10T21:30:19.813856Z" visited="2024-09-10T00:09:35.344954Z">
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gui_test.py" added="2024-09-10T00:09:35.344951Z" modified="2024-10-01T05:38:31.042477Z" visited="2024-09-10T00:09:35.344954Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-python"/>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-10T21:30:19.813851Z" count="3"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-01T05:38:31.042471Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -171,6 +171,394 @@
         <mime:mime-type type="text/x-python"/>
         <bookmark:applications>
           <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-13T22:09:40.059212Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/pausebutton.png" added="2024-09-24T01:53:35.966202Z" modified="2024-09-24T01:53:35.966232Z" visited="2024-09-24T01:53:35.966206Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:35.966221Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/playbutton.png" added="2024-09-24T01:53:38.901007Z" modified="2024-09-24T01:53:38.901035Z" visited="2024-09-24T01:53:38.901013Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:38.901023Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/button_wii-theme(1).png" added="2024-09-24T01:53:41.690548Z" modified="2024-09-24T01:53:41.690564Z" visited="2024-09-24T01:53:41.690550Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:41.690556Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/cutie2.0.png" added="2024-09-24T01:53:45.871776Z" modified="2024-09-24T01:53:45.871816Z" visited="2024-09-24T01:53:45.871781Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:45.871795Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/eatingcats.png" added="2024-09-24T01:53:51.883491Z" modified="2024-09-24T01:53:51.883554Z" visited="2024-09-24T01:53:51.883496Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:51.883518Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/lesbells.png" added="2024-09-24T01:53:55.594498Z" modified="2024-09-24T01:53:55.594516Z" visited="2024-09-24T01:53:55.594502Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:55.594507Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/loading2.0.png" added="2024-09-24T01:53:58.604778Z" modified="2024-09-24T01:53:58.604795Z" visited="2024-09-24T01:53:58.604781Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:53:58.604787Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/wii.png" added="2024-09-24T01:54:02.008142Z" modified="2024-09-24T01:54:02.008161Z" visited="2024-09-24T01:54:02.008145Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:54:02.008151Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/button_song-b(2).png" added="2024-09-24T01:54:06.185219Z" modified="2024-09-24T01:54:06.185243Z" visited="2024-09-24T01:54:06.185223Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:54:06.185231Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/button_jingle-bells(1).png" added="2024-09-24T01:54:08.783575Z" modified="2024-09-24T01:54:08.785330Z" visited="2024-09-24T01:54:08.785303Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T01:54:08.785320Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/untitled.py" added="2024-09-24T01:59:17.417638Z" modified="2024-09-24T01:59:17.618625Z" visited="2024-09-24T01:59:17.417642Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-24T01:59:17.618621Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/GUI9-23.py" added="2024-09-24T02:03:08.144761Z" modified="2024-09-24T02:03:08.206113Z" visited="2024-09-24T02:03:08.144763Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-24T02:03:08.206107Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/button_song-a(1).png" added="2024-09-24T02:06:48.346069Z" modified="2024-09-24T02:06:48.346093Z" visited="2024-09-24T02:06:48.346076Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-09-24T02:06:48.346084Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/GUI9-23.py" added="2024-09-24T02:11:05.455151Z" modified="2024-09-24T02:11:05.455163Z" visited="2024-09-24T02:11:05.455152Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-24T02:11:05.455156Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/GUI9-23.py" added="2024-09-24T02:12:30.328573Z" modified="2024-09-30T23:23:54.115303Z" visited="2024-09-24T02:12:30.328574Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-30T23:23:54.115295Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/int_gui_925" added="2024-09-25T20:54:52.156623Z" modified="2024-09-25T20:54:52.417015Z" visited="2024-09-25T20:54:52.156625Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-25T20:54:52.417010Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/INT-GUI9-25.py" added="2024-09-25T20:55:56.030838Z" modified="2024-10-06T16:16:45.737257Z" visited="2024-09-25T20:55:56.030839Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T16:16:45.737252Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/working_intgui_25.py" added="2024-09-30T23:22:54.678356Z" modified="2024-09-30T23:22:54.989989Z" visited="2024-09-30T23:22:54.678358Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-30T23:22:54.989983Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/working_midi/9_25.py" added="2024-09-30T23:31:40.230231Z" modified="2024-09-30T23:31:40.470027Z" visited="2024-09-30T23:31:40.230233Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-30T23:31:40.470022Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/working_midi/playback9-25.py" added="2024-09-30T23:32:12.275506Z" modified="2024-09-30T23:32:12.505085Z" visited="2024-09-30T23:32:12.275509Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-09-30T23:32:12.505079Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/Blink_182_-_All_the_Small_Things.mid" added="2024-10-01T02:32:39.884012Z" modified="2024-10-01T02:32:39.884028Z" visited="2024-10-01T02:32:39.884016Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/midi"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-01T02:32:39.884020Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/Dixie_Chicks_-_There&apos;s_Your_Trouble.mid" added="2024-10-01T02:32:48.657514Z" modified="2024-10-01T02:32:48.657534Z" visited="2024-10-01T02:32:48.657518Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/midi"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-01T02:32:48.657525Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/TV_Themes_-_Bob_The_Builder.mid" added="2024-10-01T02:33:35.852971Z" modified="2024-10-01T02:33:35.853012Z" visited="2024-10-01T02:33:35.852979Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/midi"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-01T02:33:35.852998Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/National_Anthems_-_United_States.mid" added="2024-10-01T02:42:32.535579Z" modified="2024-10-01T02:42:32.535624Z" visited="2024-10-01T02:42:32.535587Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/midi"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-01T02:42:32.535608Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/Vanilla_Ice_-_Ice_Ice_Baby.mid" added="2024-10-01T02:42:42.021015Z" modified="2024-10-01T02:42:42.021034Z" visited="2024-10-01T02:42:42.021018Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/midi"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-01T02:42:42.021024Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/debug_docs/freeze_issue_terminal" added="2024-10-03T15:13:58.245030Z" modified="2024-10-06T19:03:20.875416Z" visited="2024-10-03T15:13:58.245032Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2024-10-06T19:03:20.875406Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/piano/Documents/midi_scripts/gpio_off.py" added="2024-10-03T19:38:05.400214Z" modified="2024-10-03T19:38:05.463933Z" visited="2024-10-03T19:38:05.400215Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-03T19:38:05.463926Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/test_scripts/GUI_10_5.py" added="2024-10-06T02:50:48.080502Z" modified="2024-10-06T02:50:48.295566Z" visited="2024-10-06T02:50:48.080504Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T02:50:48.295562Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/GUI_10_5.py" added="2024-10-06T02:52:06.625104Z" modified="2024-10-06T02:52:06.815239Z" visited="2024-10-06T02:52:06.625106Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T02:52:06.815234Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/likee.jpg" added="2024-10-06T02:56:20.397633Z" modified="2024-10-06T02:56:20.397663Z" visited="2024-10-06T02:56:20.397637Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-06T02:56:20.397646Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Downloads/nolikee.jpg" added="2024-10-06T02:56:21.971686Z" modified="2024-10-06T02:56:21.971728Z" visited="2024-10-06T02:56:21.971689Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-10-06T02:56:21.971695Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gui_v3" added="2024-10-06T16:01:24.474502Z" modified="2024-10-06T16:01:24.836073Z" visited="2024-10-06T16:01:24.474505Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T16:01:24.836068Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gui_v3.py" added="2024-10-06T16:01:48.371676Z" modified="2024-10-06T17:14:15.913092Z" visited="2024-10-06T16:01:48.371677Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T17:14:15.913088Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/testinglength.py" added="2024-10-06T17:47:35.779606Z" modified="2024-10-06T17:47:35.975670Z" visited="2024-10-06T17:47:35.779609Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T17:47:35.975665Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/gpio_test.py" added="2024-10-06T19:17:11.887318Z" modified="2024-10-06T19:31:30.233888Z" visited="2024-10-06T19:17:11.887320Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T19:31:30.233882Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/debug_docs/led_piano_backup_10_6" added="2024-10-06T19:19:31.187866Z" modified="2024-10-06T19:19:54.428884Z" visited="2024-10-06T19:19:31.187868Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 11:17;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2024-10-06T19:19:54.428877Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/gpio_off.py" added="2024-10-06T19:29:06.874106Z" modified="2024-10-06T19:29:06.934803Z" visited="2024-10-06T19:29:06.874107Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-06T19:29:06.934796Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/instrumentgroup/Documents/midi_scripts/withbar.py" added="2024-10-07T15:49:22.864557Z" modified="2024-10-07T15:49:23.087659Z" visited="2024-10-07T15:49:22.864560Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2024-10-07T15:49:23.087652Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

@@ -1,0 +1,71 @@
+import os
+import mido
+import RPi.GPIO as GPIO
+import time
+import sys
+import json
+
+# Map every note in any octave to C4-B4 for your piano (MIDI notes 60-71)
+note_to_pin = {
+    60: 4,   # C4 (Middle C)
+    61: 17,  # C#4
+    62: 27,  # D4
+    63: 22,  # D#4
+    64: 23,  # E4
+    65: 10,  # F4
+    66: 9,   # F#4
+    67: 11,  # G4
+    68: 5,   # G#4
+    69: 6,   # A4
+    70: 26,  # A#4
+    71: 21   # B4
+}
+
+def map_note_to_piano(note):
+    """Map any MIDI note to the C4-B4 range on your piano."""
+    return (note % 12) + 60  # Shifts any octave note to C4-B4 range
+
+def setup_gpio():
+    GPIO.setmode(GPIO.BCM)
+    for pin in note_to_pin.values():
+        GPIO.setup(pin, GPIO.OUT)
+        GPIO.output(pin, GPIO.LOW)
+
+def cleanup_gpio():
+    for pin in note_to_pin.values():
+        GPIO.output(pin, GPIO.LOW)  # Turn off all pins
+    GPIO.cleanup()  # Cleanup GPIO settings
+
+def play_midi_file(midi_file_path, paused):
+    setup_gpio()
+    try:
+        midi_file = mido.MidiFile(midi_file_path)
+        for msg in midi_file.play():
+            while paused[0]:
+                time.sleep(0.1)  # Wait while paused
+
+            if msg.type == 'note_on' and msg.velocity > 75:
+                mapped_note = map_note_to_piano(msg.note)
+                pin = note_to_pin.get(mapped_note)
+                if pin:
+                    GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
+            elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
+                mapped_note = map_note_to_piano(msg.note)
+                pin = note_to_pin.get(mapped_note)
+                if pin:
+                    GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
+    finally:
+        cleanup_gpio()
+
+def main():
+    if len(sys.argv) != 3:
+        print("Usage: python play_midi.py <midi_file_path> <paused>")
+        return
+
+    midi_file_path = sys.argv[1]
+    paused = json.loads(sys.argv[2])  # Expecting "true" or "false"
+
+    play_midi_file(midi_file_path, paused)
+
+if __name__ == "__main__":
+    main()

@@ -1,4 +1,4 @@
-Xsession: X session started for instrumentgroup at Mon Sep 16 02:39:50 PM CDT 2024
+Xsession: X session started for instrumentgroup at Sun Oct  6 02:23:55 PM CDT 2024
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 xrdb: Can't open display ''
 xhost:  unable to open display ""
@@ -24,125 +24,125 @@ dbus-update-activation-environment: setting NO_AT_BRIDGE=1
 dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 dbus-update-activation-environment: setting LC_ALL=en_US.UTF-8
 dbus-update-activation-environment: setting PWD=/home/instrumentgroup
-II 16-09-24 14:39:50.946 - [src/main.cpp:280] Starting wayfire version 0.7.5
-II 16-09-24 14:39:50.947 - [libseat] [libseat/backend/seatd.c:64] Could not connect to socket /run/seatd.sock: No such file or directory
-II 16-09-24 14:39:50.947 - [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
-II 16-09-24 14:39:50.999 - [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
-II 16-09-24 14:39:51.000 - [backend/session/session.c:109] Successfully loaded libseat session
-II 16-09-24 14:39:51.010 - [backend/backend.c:220] Found 1 GPUs
-II 16-09-24 14:39:51.011 - [backend/drm/backend.c:186] Initializing DRM backend for /dev/dri/card1 (vc4)
-II 16-09-24 14:39:51.011 - [backend/drm/drm.c:242] Found 6 DRM CRTCs
-II 16-09-24 14:39:51.011 - [backend/drm/drm.c:200] Found 28 DRM planes
-II 16-09-24 14:39:51.017 - [render/egl.c:201] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_EXT_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
-EE 16-09-24 14:39:51.020 - [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
-EE 16-09-24 14:39:51.020 - [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
-II 16-09-24 14:39:51.383 - [render/egl.c:347] Using EGL 1.4
-II 16-09-24 14:39:51.383 - [render/egl.c:348] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_buffer_age EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_context_flush_control EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
-II 16-09-24 14:39:51.383 - [render/egl.c:350] Supported EGL device extensions: EGL_EXT_device_drm
-II 16-09-24 14:39:51.383 - [render/egl.c:352] EGL vendor: Mesa Project
-II 16-09-24 14:39:51.386 - [render/gles2/renderer.c:727] Creating GLES2 renderer
-II 16-09-24 14:39:51.386 - [render/gles2/renderer.c:728] Using OpenGL ES 3.1 Mesa 23.2.1-1~bpo12+rpt3
-II 16-09-24 14:39:51.386 - [render/gles2/renderer.c:729] GL vendor: Broadcom
-II 16-09-24 14:39:51.386 - [render/gles2/renderer.c:730] GL renderer: V3D 4.2
-II 16-09-24 14:39:51.387 - [render/gles2/renderer.c:731] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_AMD_performance_monitor GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_NV_pack_subimage GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_instanced_arrays GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_NV_generate_mipmap_sRGB GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_debug_label GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_cube_map_array GL_EXT_texture_view GL_KHR_context_flush_control GL_NV_image_formats GL_NV_shader_noperspective_interpolation GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_primitive_bounding_box GL_OES_shader_io_blocks GL_OES_texture_border_clamp GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clear_texture GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_MESA_framebuffer_flip_y GL_EXT_texture_query_lod GL_MESA_bgra 
-II 16-09-24 14:39:51.689 - [src/default-config-backend.cpp:101] Using config file: /home/instrumentgroup/.config/wayfire.ini
-II 16-09-24 14:39:51.689 - [src/file.cpp:576] Reading XML configuration options from directory /usr/share/wayfire/metadata
-II 16-09-24 14:39:51.689 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fast-switcher.xml
-II 16-09-24 14:39:51.690 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/pixswitcher.xml
-II 16-09-24 14:39:51.690 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/window-rules.xml
-II 16-09-24 14:39:51.690 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswipe.xml
-II 16-09-24 14:39:51.691 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fisheye.xml
-II 16-09-24 14:39:51.691 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale.xml
-II 16-09-24 14:39:51.692 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/cube.xml
-II 16-09-24 14:39:51.692 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/move.xml
-II 16-09-24 14:39:51.692 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wrot.xml
-II 16-09-24 14:39:51.693 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/expo.xml
-II 16-09-24 14:39:51.693 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autostart-static.xml
-II 16-09-24 14:39:51.693 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/winshadows.xml
-II 16-09-24 14:39:51.694 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/resize.xml
-II 16-09-24 14:39:51.694 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/pixdecor.xml
-II 16-09-24 14:39:51.694 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autostart.xml
-II 16-09-24 14:39:51.694 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/extra-gestures.xml
-II 16-09-24 14:39:51.694 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/output.xml
-II 16-09-24 14:39:51.695 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/oswitch.xml
-II 16-09-24 14:39:51.695 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/alpha.xml
-II 16-09-24 14:39:51.695 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/workarounds.xml
-II 16-09-24 14:39:51.695 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input.xml
-II 16-09-24 14:39:51.696 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wobbly.xml
-II 16-09-24 14:39:51.696 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wm-actions.xml
-II 16-09-24 14:39:51.696 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/idle.xml
-II 16-09-24 14:39:51.696 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/invert.xml
-II 16-09-24 14:39:51.697 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/grid.xml
-II 16-09-24 14:39:51.697 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/simple-tile.xml
-II 16-09-24 14:39:51.697 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/core.xml
-II 16-09-24 14:39:51.698 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswitch.xml
-II 16-09-24 14:39:51.698 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/blur.xml
-II 16-09-24 14:39:51.699 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale-title-filter.xml
-II 16-09-24 14:39:51.699 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/animate.xml
-II 16-09-24 14:39:51.700 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/preserve-output.xml
-II 16-09-24 14:39:51.700 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/command.xml
-II 16-09-24 14:39:51.700 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/zoom.xml
-II 16-09-24 14:39:51.701 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input-device.xml
-II 16-09-24 14:39:51.701 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/place.xml
-II 16-09-24 14:39:51.701 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/switcher.xml
-II 16-09-24 14:39:51.701 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/decoration.xml
-II 16-09-24 14:39:51.968 - [backend/headless/backend.c:68] Creating headless backend
-II 16-09-24 14:39:51.968 - [backend/headless/backend.c:16] Starting headless backend
-II 16-09-24 14:39:52.000 - [src/main.cpp:355] Using socket name wayland-1
-II 16-09-24 14:39:52.185 - [src/core/seat/input-manager.cpp:46] handle new input: 2.4G Mouse
-II 16-09-24 14:39:52.185 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver
-II 16-09-24 14:39:52.196 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver Mouse
-II 16-09-24 14:39:52.197 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver Consumer Control
-II 16-09-24 14:39:52.208 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver Consumer Control
-II 16-09-24 14:39:52.208 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver System Control
-II 16-09-24 14:39:52.219 - [src/core/seat/input-manager.cpp:46] handle new input: Dell KB216 Wired Keyboard
-II 16-09-24 14:39:52.230 - [src/core/seat/input-manager.cpp:46] handle new input: Dell KB216 Wired Keyboard System Control
-II 16-09-24 14:39:52.242 - [src/core/seat/input-manager.cpp:46] handle new input: Dell KB216 Wired Keyboard Consumer Control
-II 16-09-24 14:39:52.254 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-0
-II 16-09-24 14:39:52.266 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-0
-II 16-09-24 14:39:52.266 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-1
-II 16-09-24 14:39:52.278 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-1
-II 16-09-24 14:39:52.278 - [backend/drm/drm.c:1502] Scanning DRM connectors on /dev/dri/card1
-II 16-09-24 14:39:52.279 - [backend/drm/drm.c:1553] Found connector 'HDMI-A-1'
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1553] Found connector 'HDMI-A-2'
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1578] 'HDMI-A-2' connected
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1377] Physical size: 530x300
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1439] Detected modes:
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1920x1080 @ 60.000 Hz (preferred)
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1920x1080 @ 60.000 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1920x1080 @ 59.940 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1920x1080 @ 50.000 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1680x1050 @ 59.883 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1600x900 @ 60.000 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1280x1024 @ 75.025 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1280x1024 @ 60.020 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1280x800 @ 59.910 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1152x864 @ 75.000 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1280x720 @ 60.000 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1280x720 @ 60.000 Hz 
-II 16-09-24 14:39:52.330 - [backend/drm/drm.c:1478]   1280x720 @ 59.940 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   1280x720 @ 50.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   1024x768 @ 75.029 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   1024x768 @ 60.004 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   832x624 @ 74.551 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   800x600 @ 75.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   800x600 @ 60.317 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x576 @ 50.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x576 @ 50.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x480 @ 60.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x480 @ 60.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x480 @ 59.940 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x480 @ 59.940 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x480 @ 59.940 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   640x480 @ 75.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   640x480 @ 60.000 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   640x480 @ 59.940 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   640x480 @ 59.940 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1478]   720x400 @ 70.082 Hz 
-II 16-09-24 14:39:52.331 - [backend/drm/drm.c:1614] connector HDMI-A-2: Requesting modeset
-II 16-09-24 14:39:52.331 - [src/core/output-layout.cpp:1089] new output: HDMI-A-2
-II 16-09-24 14:39:52.331 - [src/core/output-layout.cpp:535] loaded mode auto
-II 16-09-24 14:39:52.340 - [backend/drm/drm.c:734] connector HDMI-A-2: Modesetting with 1920x1080 @ 60.000 Hz
+II 06-10-24 14:23:55.969 - [src/main.cpp:280] Starting wayfire version 0.7.5
+II 06-10-24 14:23:55.970 - [libseat] [libseat/backend/seatd.c:64] Could not connect to socket /run/seatd.sock: No such file or directory
+II 06-10-24 14:23:55.970 - [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
+II 06-10-24 14:23:56.010 - [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
+II 06-10-24 14:23:56.011 - [backend/session/session.c:109] Successfully loaded libseat session
+II 06-10-24 14:23:56.022 - [backend/backend.c:220] Found 1 GPUs
+II 06-10-24 14:23:56.022 - [backend/drm/backend.c:186] Initializing DRM backend for /dev/dri/card0 (vc4)
+II 06-10-24 14:23:56.022 - [backend/drm/drm.c:242] Found 6 DRM CRTCs
+II 06-10-24 14:23:56.023 - [backend/drm/drm.c:200] Found 28 DRM planes
+II 06-10-24 14:23:56.029 - [render/egl.c:201] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_EXT_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+EE 06-10-24 14:23:56.031 - [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+EE 06-10-24 14:23:56.031 - [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+II 06-10-24 14:23:56.387 - [render/egl.c:347] Using EGL 1.4
+II 06-10-24 14:23:56.387 - [render/egl.c:348] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_buffer_age EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_context_flush_control EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
+II 06-10-24 14:23:56.387 - [render/egl.c:350] Supported EGL device extensions: EGL_EXT_device_drm
+II 06-10-24 14:23:56.387 - [render/egl.c:352] EGL vendor: Mesa Project
+II 06-10-24 14:23:56.390 - [render/gles2/renderer.c:727] Creating GLES2 renderer
+II 06-10-24 14:23:56.391 - [render/gles2/renderer.c:728] Using OpenGL ES 3.1 Mesa 23.2.1-1~bpo12+rpt3
+II 06-10-24 14:23:56.391 - [render/gles2/renderer.c:729] GL vendor: Broadcom
+II 06-10-24 14:23:56.391 - [render/gles2/renderer.c:730] GL renderer: V3D 4.2
+II 06-10-24 14:23:56.391 - [render/gles2/renderer.c:731] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_AMD_performance_monitor GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_NV_pack_subimage GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_instanced_arrays GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_NV_generate_mipmap_sRGB GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_debug_label GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_cube_map_array GL_EXT_texture_view GL_KHR_context_flush_control GL_NV_image_formats GL_NV_shader_noperspective_interpolation GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_primitive_bounding_box GL_OES_shader_io_blocks GL_OES_texture_border_clamp GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clear_texture GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_MESA_framebuffer_flip_y GL_EXT_texture_query_lod GL_MESA_bgra 
+II 06-10-24 14:23:56.744 - [src/default-config-backend.cpp:101] Using config file: /home/instrumentgroup/.config/wayfire.ini
+II 06-10-24 14:23:56.744 - [src/file.cpp:576] Reading XML configuration options from directory /usr/share/wayfire/metadata
+II 06-10-24 14:23:56.744 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fast-switcher.xml
+II 06-10-24 14:23:56.745 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/pixswitcher.xml
+II 06-10-24 14:23:56.746 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/window-rules.xml
+II 06-10-24 14:23:56.746 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswipe.xml
+II 06-10-24 14:23:56.746 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fisheye.xml
+II 06-10-24 14:23:56.747 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale.xml
+II 06-10-24 14:23:56.747 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/cube.xml
+II 06-10-24 14:23:56.748 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/move.xml
+II 06-10-24 14:23:56.749 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wrot.xml
+II 06-10-24 14:23:56.749 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/expo.xml
+II 06-10-24 14:23:56.749 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autostart-static.xml
+II 06-10-24 14:23:56.750 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/winshadows.xml
+II 06-10-24 14:23:56.750 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/resize.xml
+II 06-10-24 14:23:56.750 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/pixdecor.xml
+II 06-10-24 14:23:56.751 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autostart.xml
+II 06-10-24 14:23:56.751 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/extra-gestures.xml
+II 06-10-24 14:23:56.751 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/output.xml
+II 06-10-24 14:23:56.751 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/oswitch.xml
+II 06-10-24 14:23:56.752 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/alpha.xml
+II 06-10-24 14:23:56.752 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/workarounds.xml
+II 06-10-24 14:23:56.752 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input.xml
+II 06-10-24 14:23:56.754 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wobbly.xml
+II 06-10-24 14:23:56.754 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wm-actions.xml
+II 06-10-24 14:23:56.754 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/idle.xml
+II 06-10-24 14:23:56.755 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/invert.xml
+II 06-10-24 14:23:56.755 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/grid.xml
+II 06-10-24 14:23:56.756 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/simple-tile.xml
+II 06-10-24 14:23:56.756 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/core.xml
+II 06-10-24 14:23:56.757 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswitch.xml
+II 06-10-24 14:23:56.757 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/blur.xml
+II 06-10-24 14:23:56.758 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale-title-filter.xml
+II 06-10-24 14:23:56.759 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/animate.xml
+II 06-10-24 14:23:56.759 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/preserve-output.xml
+II 06-10-24 14:23:56.760 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/command.xml
+II 06-10-24 14:23:56.760 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/zoom.xml
+II 06-10-24 14:23:56.760 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input-device.xml
+II 06-10-24 14:23:56.760 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/place.xml
+II 06-10-24 14:23:56.761 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/switcher.xml
+II 06-10-24 14:23:56.761 - [src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/decoration.xml
+II 06-10-24 14:23:57.042 - [backend/headless/backend.c:68] Creating headless backend
+II 06-10-24 14:23:57.042 - [backend/headless/backend.c:16] Starting headless backend
+II 06-10-24 14:23:57.078 - [src/main.cpp:355] Using socket name wayland-1
+II 06-10-24 14:23:57.201 - [src/core/seat/input-manager.cpp:46] handle new input: USB Optical Mouse
+II 06-10-24 14:23:57.201 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver
+II 06-10-24 14:23:57.213 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver Mouse
+II 06-10-24 14:23:57.213 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver Consumer Control
+II 06-10-24 14:23:57.225 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver Consumer Control
+II 06-10-24 14:23:57.225 - [src/core/seat/input-manager.cpp:46] handle new input: Dell Computer Corp Dell Universal Receiver System Control
+II 06-10-24 14:23:57.236 - [src/core/seat/input-manager.cpp:46] handle new input: Dell KB216 Wired Keyboard
+II 06-10-24 14:23:57.247 - [src/core/seat/input-manager.cpp:46] handle new input: Dell KB216 Wired Keyboard System Control
+II 06-10-24 14:23:57.259 - [src/core/seat/input-manager.cpp:46] handle new input: Dell KB216 Wired Keyboard Consumer Control
+II 06-10-24 14:23:57.270 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-0
+II 06-10-24 14:23:57.282 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-0
+II 06-10-24 14:23:57.282 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-1
+II 06-10-24 14:23:57.293 - [src/core/seat/input-manager.cpp:46] handle new input: vc4-hdmi-1
+II 06-10-24 14:23:57.294 - [backend/drm/drm.c:1502] Scanning DRM connectors on /dev/dri/card0
+II 06-10-24 14:23:57.294 - [backend/drm/drm.c:1553] Found connector 'HDMI-A-1'
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1553] Found connector 'HDMI-A-2'
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1578] 'HDMI-A-2' connected
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1377] Physical size: 530x300
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1439] Detected modes:
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1920x1080 @ 60.000 Hz (preferred)
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1920x1080 @ 60.000 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1920x1080 @ 59.940 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1920x1080 @ 50.000 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1680x1050 @ 59.883 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1600x900 @ 60.000 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1280x1024 @ 75.025 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1280x1024 @ 60.020 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1280x800 @ 59.910 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1152x864 @ 75.000 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1280x720 @ 60.000 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1280x720 @ 60.000 Hz 
+II 06-10-24 14:23:57.345 - [backend/drm/drm.c:1478]   1280x720 @ 59.940 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   1280x720 @ 50.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   1024x768 @ 75.029 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   1024x768 @ 60.004 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   832x624 @ 74.551 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   800x600 @ 75.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   800x600 @ 60.317 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x576 @ 50.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x576 @ 50.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x480 @ 60.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x480 @ 60.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x480 @ 59.940 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x480 @ 59.940 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x480 @ 59.940 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   640x480 @ 75.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   640x480 @ 60.000 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   640x480 @ 59.940 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   640x480 @ 59.940 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1478]   720x400 @ 70.082 Hz 
+II 06-10-24 14:23:57.346 - [backend/drm/drm.c:1614] connector HDMI-A-2: Requesting modeset
+II 06-10-24 14:23:57.346 - [src/core/output-layout.cpp:1089] new output: HDMI-A-2
+II 06-10-24 14:23:57.346 - [src/core/output-layout.cpp:535] loaded mode auto
+II 06-10-24 14:23:57.354 - [backend/drm/drm.c:734] connector HDMI-A-2: Modesetting with 1920x1080 @ 60.000 Hz
 (type equals variant: [type: string, value: toplevel] | (type equals variant: [type: string, value: x-or] & focusable equals variant: [type: bool, value: 1]))
 type equals variant: [type: string, value: overlay]
 false
@@ -150,28 +150,772 @@ false
 false
 app_id equals variant: [type: string, value: Kodi]
 (type equals variant: [type: string, value: toplevel] & floating equals variant: [type: bool, value: 1])
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
-EE 16-09-24 14:39:52.775 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
-EE 16-09-24 14:39:52.776 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
-II 16-09-24 14:40:32.926 - [src/view/xdg-shell.cpp:25] New xdg popup
-II 16-09-24 14:40:35.035 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Installing updates... app-id: wf-panel-pi
-II 16-09-24 14:40:35.036 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Installing updates... app-id: wf-panel-pi
+EE 06-10-24 14:23:57.720 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 14:23:57.721 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+II 06-10-24 14:25:30.641 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: lxterminal
 app_id equals variant: [type: string, value: Kodi]
-II 16-09-24 14:40:35.061 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Mozilla Firefox app-id: firefox
+II 06-10-24 14:25:31.652 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 14:25:31.674 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 06-10-24 14:25:31.685 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 06-10-24 14:25:31.685 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 14:25:31.685 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.685 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.686 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 14:25:31.686 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.686 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 14:25:31.686 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 14:25:31.686 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 14:25:31.686 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 06-10-24 14:26:03.615 - [xwayland/server.c:108] Starting Xwayland on :1
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 06-10-24 14:26:04.406 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+xsettingsd: Loaded 19 settings from /home/instrumentgroup/.config/xsettingsd/xsettingsd.conf
+xsettingsd: Created window 0x600001 on screen 0 with timestamp 80371
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+EE 06-10-24 14:26:04.657 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:26:04.680 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:26:04.680 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
 app_id equals variant: [type: string, value: Kodi]
-II 16-09-24 14:43:06.204 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: lxterminal
+EE 06-10-24 14:26:05.993 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 06-10-24 14:26:06.351 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 50ms, your system is too slow
+
+EE 06-10-24 14:26:12.738 - [libinput] client bug: timer event2 debounce short: scheduled expiry is in the past (-24ms), your system is too slow
+
+EE 06-10-24 14:26:19.598 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 31ms, your system is too slow
+
+II 06-10-24 14:26:29.443 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 14:26:33.352 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 06-10-24 14:26:33.577 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 06-10-24 14:26:33.577 - [libinput] event2  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 06-10-24 14:26:34.512 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 204, value 4194344
+EE 06-10-24 14:26:34.512 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 206, value 4194344
+II 06-10-24 14:27:14.861 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: pcmanfm app-id: pcmanfm
 app_id equals variant: [type: string, value: Kodi]
-II 16-09-24 14:43:12.169 - [src/view/xdg-shell.cpp:25] New xdg popup
-II 16-09-24 14:43:12.676 - [src/view/xdg-shell.cpp:25] New xdg popup
-II 16-09-24 14:43:13.138 - [src/view/xdg-shell.cpp:25] New xdg popup
-II 16-09-24 14:43:14.293 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Mozilla Firefox app-id: firefox
+II 06-10-24 14:27:21.990 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:27:22.457 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:27:24.289 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:27:24.604 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: led_piano.py - /home/instrumentgroup/Documents/midi_scripts - Geany app-id: geany
 app_id equals variant: [type: string, value: Kodi]
-II 16-09-24 14:43:19.905 - [src/view/xdg-shell.cpp:25] New xdg popup
-II 16-09-24 14:43:20.273 - [src/view/xdg-shell.cpp:25] New xdg popup
-II 16-09-24 14:43:27.614 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: gui_test_sean.py - /home/instrumentgroup/Documents/midi_scripts - Geany app-id: geany
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 06-10-24 14:28:53.682 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Open File app-id: geany
 app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 14:29:04.811 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:29:44.183 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:31:16.745 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:31:17.382 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:31:19.203 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: untitled - Geany (new instance) app-id: geany
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 14:31:22.151 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Open File app-id: geany
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 14:31:23.250 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:31:23.738 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:31:25.088 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:31:40.872 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:32:34.286 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: lxterminal
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 14:33:19.722 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:34:02.720 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:35:54.802 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:36:02.694 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: lxterminal
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 14:36:03.722 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 14:36:19.726 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 14:38:27.884 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:38:28.030 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:38:28.030 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 14:41:39.930 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 14:41:45.260 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 305, value 4194344
+EE 06-10-24 14:41:45.260 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 307, value 4194344
+II 06-10-24 14:41:47.714 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 14:41:54.968 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:41:55.127 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:41:55.128 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 14:42:09.509 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 361, value 4194345
+EE 06-10-24 14:42:09.512 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 363, value 4194345
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 06-10-24 14:48:57.123 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:48:57.283 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:48:57.284 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 14:49:00.713 - [libinput] event6  - Dell Computer Corp Dell Universal Receiver Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 06-10-24 14:49:02.227 - [libinput] event6  - Dell Computer Corp Dell Universal Receiver Mouse: client bug: event processing lagging behind by 32ms, your system is too slow
+
+EE 06-10-24 14:49:17.130 - [libinput] event6  - Dell Computer Corp Dell Universal Receiver Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 06-10-24 14:49:53.247 - [libinput] event6  - Dell Computer Corp Dell Universal Receiver Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 06-10-24 14:50:08.530 - [libinput] event6  - Dell Computer Corp Dell Universal Receiver Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 06-10-24 14:50:08.530 - [libinput] event6  - Dell Computer Corp Dell Universal Receiver Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 06-10-24 14:50:28.376 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 449, value 4194345
+EE 06-10-24 14:50:31.135 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:50:31.296 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:50:31.297 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 14:52:56.444 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 516, value 4194345
+EE 06-10-24 14:52:59.873 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:53:00.063 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:53:00.063 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 14:53:49.659 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 581, value 4194345
+EE 06-10-24 14:53:51.893 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:53:52.054 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:53:52.054 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 14:54:07.820 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 630, value 4194345
+EE 06-10-24 14:54:07.825 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 632, value 4194345
+EE 06-10-24 14:56:03.976 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:56:04.129 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 14:56:04.129 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 14:57:25.840 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 684, value 4194345
+EE 06-10-24 14:57:25.841 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 686, value 4194345
+II 06-10-24 15:28:20.053 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 06-10-24 15:28:20.071 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 15:28:20.071 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.071 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.071 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 15:28:20.072 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.072 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.072 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 15:28:20.072 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 15:28:20.072 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+EE 06-10-24 15:28:20.072 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 06-10-24 15:28:20.093 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 06-10-24 15:28:20.093 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+EE 06-10-24 15:28:20.094 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 06-10-24 15:30:54.994 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:31:29.116 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
+
+II 06-10-24 15:32:20.872 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:32:45.204 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:33:18.026 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:33:36.096 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:33:36.225 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:33:36.253 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:33:48.809 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 752, value 4194343
+EE 06-10-24 15:33:48.809 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 754, value 4194343
+EE 06-10-24 15:33:52.445 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:33:52.575 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:33:52.600 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:35:05.009 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 811, value 4194343
+EE 06-10-24 15:35:05.009 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 813, value 4194343
+II 06-10-24 15:36:15.999 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:36:18.759 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:37:01.131 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:37:02.947 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:37:08.513 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:37:08.643 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 06-10-24 15:37:29.601 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:37:36.601 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:37:36.727 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:37:36.752 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:38:06.014 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 880, value 4194343
+EE 06-10-24 15:38:06.015 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 882, value 4194343
+II 06-10-24 15:39:13.373 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:39:25.946 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:39:26.551 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:39:50.550 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:39:50.701 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:39:50.701 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:42:10.850 - [libinput] client bug: timer event6 debounce: scheduled expiry is in the past (-23ms), your system is too slow
+
+EE 06-10-24 15:42:10.851 - [libinput] client bug: timer event6 debounce short: scheduled expiry is in the past (-37ms), your system is too slow
+
+EE 06-10-24 15:42:17.315 - [libinput] client bug: timer event6 debounce short: scheduled expiry is in the past (-21ms), your system is too slow
+
+II 06-10-24 15:43:34.472 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 06-10-24 15:43:34.473 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 06-10-24 15:44:22.117 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 961, value 4194345
+EE 06-10-24 15:44:25.096 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:44:25.304 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:44:25.304 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:44:44.273 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1010, value 4194345
+EE 06-10-24 15:44:44.273 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1012, value 4194345
+II 06-10-24 15:44:45.335 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:44:48.141 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:44:48.301 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:44:48.301 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 15:44:48.502 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 15:45:41.475 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1083, value 4194345
+EE 06-10-24 15:45:41.475 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1085, value 4194345
+EE 06-10-24 15:45:44.905 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:45:45.055 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:45:45.055 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:47:25.871 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1149, value 4194345
+EE 06-10-24 15:47:28.900 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:47:29.059 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 15:47:29.060 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 15:51:10.568 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1214, value 4194345
+EE 06-10-24 15:51:10.569 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1216, value 4194345
+EE 06-10-24 15:51:10.728 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 24ms, your system is too slow
+
+EE 06-10-24 15:51:11.077 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+
+II 06-10-24 15:51:22.020 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 06-10-24 15:51:22.021 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+II 06-10-24 15:51:22.779 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 15:54:59.579 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 06-10-24 15:54:59.604 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 15:54:59.611 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 06-10-24 15:54:59.625 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 15:54:59.625 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 06-10-24 15:57:25.628 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 06-10-24 15:57:25.629 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 06-10-24 18:31:56.999 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 18:31:57.012 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 06-10-24 18:31:57.023 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 06-10-24 18:31:57.023 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 06-10-24 18:32:44.841 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:32:47.537 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:32:53.557 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:32:53.704 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:32:53.735 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 18:33:48.444 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:33:51.202 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:34:05.752 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1292, value 4194343
+EE 06-10-24 18:34:05.752 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1294, value 4194343
+EE 06-10-24 18:34:09.046 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:34:09.187 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:34:09.216 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 18:34:23.307 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1351, value 4194343
+EE 06-10-24 18:34:23.307 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1353, value 4194343
+II 06-10-24 18:35:24.894 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:35:27.282 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:36:01.770 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:36:02.707 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:36:03.253 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:36:05.298 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:36:09.265 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:36:09.404 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:36:09.431 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 18:37:11.824 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:37:14.558 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:37:42.545 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1444, value 4194343
+II 06-10-24 18:38:49.680 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:38:52.078 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:39:00.335 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:39:00.475 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:39:00.504 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 18:39:21.953 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1501, value 4194343
+II 06-10-24 18:39:35.751 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:39:37.920 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:39:41.714 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:39:41.844 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:39:41.872 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 18:40:14.939 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1556, value 4194343
+II 06-10-24 18:41:38.031 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:41:39.581 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:41:41.849 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:41:46.231 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:41:46.374 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 06-10-24 18:41:54.328 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:41:57.155 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:42:00.736 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:42:00.882 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:42:00.910 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 18:42:35.780 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1622, value 4194343
+II 06-10-24 18:42:48.714 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:44:43.917 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:44:59.902 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 18:45:03.035 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 18:45:12.935 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:45:13.071 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 18:45:13.102 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:19:22.463 - [libinput] event2  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 06-10-24 20:28:14.076 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:28:17.330 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:28:27.284 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1741, value 4194344
+II 06-10-24 20:28:27.717 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Color Chooser app-id: geany
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 20:28:28.402 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:29:22.765 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:29:22.918 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:29:22.950 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 20:31:08.965 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:31:39.594 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:31:41.715 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:31:42.977 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1800, value 4194344
+EE 06-10-24 20:32:03.552 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:32:03.686 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:32:03.714 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:37:03.141 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1888, value 4194343
+EE 06-10-24 20:37:03.142 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 1890, value 4194343
+II 06-10-24 20:37:03.695 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:37:10.638 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:37:10.753 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:37:10.782 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 20:37:55.713 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:40:03.713 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:40:58.380 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:40:59.712 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:04.055 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:22.712 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:23.871 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:24.669 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:25.517 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:26.157 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:26.272 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:29.026 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:29.701 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:31.604 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:32.980 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:33.836 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:34.152 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:34.436 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:41:43.750 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:43:42.179 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:44:25.712 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:44:45.725 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:45:29.714 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:45:56.487 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:45:56.609 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:46:39.833 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:46:39.961 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 06-10-24 20:46:52.945 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:46:53.345 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:46:58.052 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:46:58.180 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:46:58.214 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:48:19.070 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2202, value 8388647
+EE 06-10-24 20:48:19.071 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2204, value 8388647
+EE 06-10-24 20:48:24.732 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:48:24.850 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:48:24.880 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:49:38.031 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:49:38.144 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 06-10-24 20:50:02.778 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:50:03.712 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:50:24.083 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:50:24.716 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:50:40.605 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:50:40.740 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 06-10-24 20:50:52.957 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:50:53.997 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:50:54.881 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:50:58.444 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:51:00.795 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:51:15.196 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2481, value 10485799
+EE 06-10-24 20:51:15.197 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2483, value 10485799
+II 06-10-24 20:51:38.168 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:51:38.980 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:53:20.283 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:53:20.409 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:53:20.438 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:53:33.955 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2557, value 10485799
+EE 06-10-24 20:53:33.955 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2559, value 10485799
+II 06-10-24 20:53:36.069 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:54:21.313 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:54:21.432 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:54:21.464 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 20:54:28.672 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 20:54:34.714 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 20:55:12.043 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2641, value 10485799
+EE 06-10-24 20:55:12.043 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2643, value 10485799
+EE 06-10-24 20:55:16.593 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:55:16.706 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 20:55:16.744 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 20:55:38.531 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2700, value 10485799
+EE 06-10-24 20:55:38.531 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2702, value 10485799
+EE 06-10-24 21:00:08.579 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:00:08.699 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:00:08.730 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:01:55.128 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2794, value 10485799
+EE 06-10-24 21:01:55.129 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2796, value 10485799
+EE 06-10-24 21:02:01.116 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:02:01.230 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:02:01.258 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:02:35.943 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2859, value 10485799
+EE 06-10-24 21:02:35.943 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2861, value 10485799
+EE 06-10-24 21:04:40.159 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:04:40.279 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:04:40.306 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:05:30.624 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2923, value 10485799
+EE 06-10-24 21:05:30.625 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 2925, value 10485799
+EE 06-10-24 21:05:42.328 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:05:42.449 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:05:42.479 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+II 06-10-24 21:08:07.060 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 21:08:30.312 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 21:08:33.787 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 21:09:36.718 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 21:09:50.039 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 06-10-24 21:12:21.609 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3005, value 10485799
+EE 06-10-24 21:12:21.610 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3007, value 10485799
+EE 06-10-24 21:12:25.390 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:12:25.514 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:12:25.541 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:13:03.052 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3061, value 10485799
+EE 06-10-24 21:13:03.052 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3063, value 10485799
+EE 06-10-24 21:14:33.500 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:14:33.669 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:14:33.697 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:15:01.754 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3120, value 10485799
+EE 06-10-24 21:15:01.754 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3122, value 10485799
+EE 06-10-24 21:15:57.057 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:15:57.175 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:15:57.204 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:17:47.673 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3198, value 10485799
+EE 06-10-24 21:17:47.673 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3200, value 10485799
+EE 06-10-24 21:17:54.239 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:17:54.357 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 06-10-24 21:17:54.388 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 06-10-24 21:18:13.119 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3257, value 10485799
+EE 06-10-24 21:18:13.120 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3259, value 10485799
+II 06-10-24 21:18:27.713 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 06-10-24 21:41:52.928 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 06-10-24 21:41:52.928 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 06-10-24 21:44:59.846 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 00:35:18.217 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 07-10-24 00:35:18.231 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 07-10-24 00:35:18.242 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 07-10-24 00:35:18.242 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 07-10-24 00:35:35.714 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:35:35.830 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:35:35.858 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 00:36:10.872 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3334, value 10485799
+EE 07-10-24 00:36:10.872 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3336, value 10485799
+EE 07-10-24 00:39:43.305 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:40:36.047 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:41:10.099 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:42:12.781 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:42:54.786 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:42:54.906 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:42:54.933 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 00:43:22.816 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3445, value 10485799
+EE 07-10-24 00:43:22.817 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3447, value 10485799
+EE 07-10-24 00:45:28.423 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:45:28.546 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:45:28.576 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 00:46:39.677 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3523, value 10485799
+EE 07-10-24 00:46:39.677 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3525, value 10485799
+EE 07-10-24 00:46:44.402 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:46:44.534 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:46:44.594 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 00:47:00.287 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3577, value 10485799
+EE 07-10-24 00:47:00.287 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3579, value 10485799
+EE 07-10-24 00:48:29.898 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:48:30.013 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 00:48:30.043 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 00:48:59.344 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3636, value 10485799
+EE 07-10-24 00:48:59.345 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3638, value 10485799
+II 07-10-24 00:49:22.714 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 00:49:45.784 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 00:49:46.860 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 00:49:49.957 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 00:50:32.859 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 00:50:33.266 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 07-10-24 00:50:33.268 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 07-10-24 10:23:06.460 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 07-10-24 10:23:06.473 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 07-10-24 10:23:06.473 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 07-10-24 10:23:06.474 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 07-10-24 10:23:06.484 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 07-10-24 10:23:06.485 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 07-10-24 10:24:22.203 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:24:33.769 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 07-10-24 10:24:33.772 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+II 07-10-24 10:37:51.151 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_keyboard_v1
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 07-10-24 10:37:51.165 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 07-10-24 10:37:51.166 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+II 07-10-24 10:37:51.176 - [src/core/seat/input-manager.cpp:46] handle new input: wlr_virtual_pointer_v1
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "Dell Computer Corp Dell Universal Receiver System Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard System Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "Dell KB216 Wired Keyboard Consumer Control" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-0" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "vc4-hdmi-1" to output (not found in this cursor)
+EE 07-10-24 10:37:51.176 - [types/wlr_cursor.c:875] Cannot map device "wlr_virtual_keyboard_v1" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 07-10-24 10:39:39.468 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 10:39:39.586 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 10:39:39.614 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 10:40:19.874 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3699, value 10485799
+EE 07-10-24 10:40:19.875 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3701, value 10485799
+II 07-10-24 10:40:31.966 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:40:32.636 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: pcmanfm app-id: pcmanfm
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 10:40:33.785 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:40:52.500 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:41:01.181 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 07-10-24 10:41:45.723 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 10:41:45.870 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 10:41:45.870 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 10:42:03.189 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3755, value 10485801
+EE 07-10-24 10:42:03.190 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3757, value 10485801
+II 07-10-24 10:42:33.901 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:42:39.556 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:42:42.059 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:43:20.419 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:43:31.715 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:48:27.485 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:48:28.911 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:48:52.029 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:48:54.786 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Save File app-id: geany
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 10:50:28.884 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:50:50.808 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:52:04.540 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:52:16.036 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:53:07.743 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:53:54.726 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:53:59.715 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:54:02.265 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Mozilla Firefox app-id: firefox
+II 07-10-24 10:54:02.265 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Mozilla Firefox app-id: firefox
+II 07-10-24 10:54:02.265 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Mozilla Firefox app-id: firefox
+app_id equals variant: [type: string, value: Kodi]
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 10:54:03.690 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:56:21.662 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 10:57:25.237 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Find app-id: geany
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 10:58:18.506 - [src/view/xdg-shell.cpp:25] New xdg popup
+EE 07-10-24 11:01:05.677 - [src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 11:01:05.917 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 07-10-24 11:01:05.969 - [src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+app_id equals variant: [type: string, value: Kodi]
+EE 07-10-24 11:01:51.437 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3877, value 10485802
+EE 07-10-24 11:01:51.437 - [xwayland/xwm.c:1530] xcb error: op 18:0, code 3, sequence 3879, value 10485802
+II 07-10-24 11:03:59.246 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 11:04:00.351 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 11:04:01.115 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Question app-id: geany
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 11:04:08.218 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_keyboard_v1
+II 07-10-24 11:04:08.246 - [src/core/seat/input-manager.cpp:104] remove input: wlr_virtual_pointer_v1
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 13:59:27.420 - [src/view/xdg-shell.cpp:25] New xdg popup
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+app_id equals variant: [type: string, value: Kodi]
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 14:15:44.764 - [src/view/xdg-shell.cpp:25] New xdg popup
+II 07-10-24 14:16:20.906 - [src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: pcmanfm app-id: pcmanfm
+app_id equals variant: [type: string, value: Kodi]
+II 07-10-24 14:16:24.885 - [src/view/xdg-shell.cpp:25] New xdg popup

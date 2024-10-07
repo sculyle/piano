@@ -1,2 +1,8 @@
-{"timestamp":211481,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required","glean_timestamp":"1726515800941"}}
-{"timestamp":217807,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1726515807267"}}
+{"timestamp":73760621,"category":"webcompatreporting","name":"reason_dropdown","extra":{"glean_timestamp":"1728316444888","setting":"required"}}
+{"timestamp":73776490,"category":"nimbus_events","name":"enrollment","extra":{"experiment_type":"rollout","glean_timestamp":"1728316460758","branch":"control","experiment":"disable-ads-startup-cache"}}
+{"timestamp":73776687,"category":"nimbus_events","name":"validation_failed","extra":{"glean_timestamp":"1728316460955","reason":"invalid-feature","feature":"addAnImageInPDF","experiment":"add-an-image-to-pdf-with-alt-text-rollout"}}
+{"timestamp":73776689,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1728316460957"}}
+{"timestamp":73778190,"category":"urlbar","name":"engagement","extra":{"groups":"heuristic,adaptive_history,general,general,general,general,general,general","n_results":"8","actions":"none,none,none,none,none,none,none,none","search_mode":"","n_words":"1","selected_position":"1","search_engine_default_id":"google-b-1-d","provider":"HeuristicFallback","glean_timestamp":"1728316462457","n_chars":"9","interaction":"typed","selected_result":"url","engagement_type":"enter","sap":"urlbar_newtab","results":"url,history,search_engine,history,history,history,history,history"}}
+{"timestamp":73779320,"category":"addons_manager","name":"manage","extra":{"addon_type":"extension","source":"system-addon","addon_id":"screenshots@mozilla.org","method":"disable","glean_timestamp":"1728316463588"}}
+{"timestamp":73795094,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"addAnImageInPDF","glean_timestamp":"1728316479362","experiment":"add-an-image-to-pdf-with-alt-text-rollout","reason":"invalid-feature"}}
+{"timestamp":73795095,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1728316479363"}}
