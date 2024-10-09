@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  withbar.py
+#  10_8_gui.py
 #  
 #  Copyright 2024  <instrumentgroup@instrument>
 #  
@@ -29,14 +29,16 @@ import subprocess
 import os
 import signal
 import mido
+from mido import MidiFile
 from tkinter import HORIZONTAL, Button  # import Button and HORIZONTAL
+
 
 
 # Setup Config
 root = tk.Tk()
 root.configure(background = 'white')
 
-canvas = tk.Canvas(root, width = 400, height = 400, background = 'white')
+canvas = tk.Canvas(root, width = 400, height = 600, background = 'white')
 canvas.grid(columnspan=20, rowspan = 20)
 label = tk.Label(root, text = ' Song Choice', font = ('Roboto', 15), background = 'white')
 label.grid(columnspan =3, column = 2, row = 4)
@@ -69,15 +71,16 @@ def showbar():
     global progress
     if enable >0:
         progress = ttk.Progressbar(root, orient=HORIZONTAL,
-              length=150, mode='determinate')
-        progress.grid(row=  16, column = 9)
+              length=200, mode='determinate')
+        progress.grid(row=  13, column = 11)
 
     else:
         progress = ttk.Progressbar(root, orient=HORIZONTAL,
               length=0, mode='determinate')
-        progress.grid(row=  16, column = 9)
+        progress.grid(row=  13, column = 11)
 
 # This button will initialize the progress bar#duration = mid.length <-- function which will give duration of file in seconds.
+
 lengthx = 100
 count = 0
 updatelength = 0
@@ -211,6 +214,7 @@ def stop_previous_process():
 #  ----------------- Ask MIDI for info -----------------  
 # Function to find max velocity (from the old version)
 def find_max_velocity(midi_file_path):
+	#global midi_file
     """Scan the MIDI file to find the maximum velocity value."""
     max_velocity = 0
     midi_file = mido.MidiFile(midi_file_path)
@@ -263,7 +267,7 @@ like = 0
 
 #Label for Song title
 label2 = tk.Label(root, text = song, font = ('Ariel', 13), background = 'white')
-label2.grid(columnspan = 3, column = 8, row = 15)
+label2.grid(columnspan = 3, column = 8, row = 11)
 
 style = ttk.Style()
 style.configure('TButton', background = 'white')
@@ -291,11 +295,11 @@ button4.grid(column=3, row=12)
 
 #Pause Button
 pause_button = tk.Button(root, image = pause_pic, command = pause, background = 'white', borderwidth = 0)
-pause_button.grid(column = 9, row = 16)
+pause_button.grid(column = 11, row = 16)
 
 #Like Button
 like_button = tk.Button(root, image = like_pic, command = likeit, background = 'white', borderwidth = 0)
-like_button.grid(column = 10, row = 16)
+like_button.grid(column = 12, row = 16)
 
 # Velocity Percentage Slider
 velocity_slider_label = tk.Label(root, text="Set Velocity Filter", font=('Ariel', 13), background='white')
@@ -306,7 +310,7 @@ velocity_slider.grid(columnspan=6, column=8, row=19)
 
 # Checkbox for channels_allowed
 channels_checkbox = tk.Checkbutton(root, text="Play Only Piano Notes", variable=channels_allowed, background='white')
-channels_checkbox.grid(columnspan=2, column=13, row=20)
+channels_checkbox.grid(columnspan=2, column=11, row=20)
 
 
 
@@ -331,17 +335,16 @@ def display():
     image_og = Image.open(image_path)
     image_tk = ImageTk.PhotoImage(image_og)
     canvas.image_tk = image_tk
-    canvas.grid(columnspan = 6, column = 9, row = 6)
-    canvas.create_image(8, 4, image = canvas.image_tk, anchor = 'nw')
+    canvas.grid(columnspan = 6, column = 11, row = 6)
+    canvas.create_image(6, 11, image = canvas.image_tk, anchor = 'nw')
     label2.config(text=song)
-    label2.grid(columnspan =3, column = 8, row = 15)
+    label2.grid(column = 10, row = 14)
 
 def pause():
     if stop ==1:
         pause_button.config(image=play_pic)
     else:
         pause_button.config(image=pause_pic)
-
 
 
 def like_func():

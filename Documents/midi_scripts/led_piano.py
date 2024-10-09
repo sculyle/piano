@@ -35,15 +35,28 @@ velocity_threshold = 0
 active_notes = set()  # Track currently active notes
 
 def handle_signal(signum, frame):
-    global paused
+    global paused, playback_position
     if signum == signal.SIGUSR1:
         paused = True
         pause_event.set()
-        print("Paused")
+        #print("Paused")
+        print(f"Paused at position: {playback_position}")
+        sys.stdout.flush()
+        sys.exit()
     elif signum == signal.SIGUSR2:
         paused = False
         resume_event.set()
-        print("Resumed")
+        #print("Resumed")
+
+def get_tempo(midi_file_path):
+    """Retrieve the tempo from the MIDI file."""
+    midi_file = mido.MidiFile(midi_file_path)
+    for track in midi_file.tracks:
+        for msg in track:
+            if msg.type == 'set_tempo':
+                # Tempo is specified in microseconds per beat
+                return mido.tempo2bpm(msg.tempo)  # Convert to BPM
+    return 120  # Default to 120 BPM if no tempo is found
 
 def find_max_velocity(midi_file):
     """Scan the MIDI file to find the maximum velocity value."""
@@ -54,18 +67,37 @@ def find_max_velocity(midi_file):
                 max_velocity = msg.velocity
     return max_velocity
 
+
+
+# Add this function to continuously update playback position
+def update_playback_position(playback):
+    global playback_position
+    while True:
+        if paused:
+            time.sleep(0.1)  # Sleep if paused to avoid busy-waiting
+            continue
+        try:
+            msg = next(playback)  # Get the next MIDI message
+            playback_position += msg.time  # Update playback position
+            time.sleep(0.01)  # Add slight delay to reduce CPU usage
+        except StopIteration:
+            break
+
+
 def main():
     global playback_position, paused, max_velocity, velocity_threshold, active_notes
     
-    # Check if the MIDI file path, channels_allowed, and percentage are provided
-    if len(sys.argv) > 3:
+    # Check if the MIDI file path, channels_allowed, percentage, and playback_position are provided
+    if len(sys.argv) > 4:
         channels_allowed_value = int(sys.argv[1])  # Convert from string to integer
         midi_file_path = sys.argv[2]
         percentage = float(sys.argv[3])
+        playback_position = int(sys.argv[4])  # Get playback position from arguments
         print(f"Channels Allowed: {channels_allowed_value}")
         print(f"Playing MIDI file: {midi_file_path} with filtering percentage: {percentage}")
+        print(f"Starting from playback position: {playback_position}")
     else:
-        print("No MIDI file path, channels allowed, or filtering percentage provided")
+        print("No MIDI file path, channels allowed, filtering percentage, or playback position provided")
         sys.exit(1)
 
     # Determine channel_select based on channels_allowed_value
@@ -104,6 +136,9 @@ def main():
         # Initialize playback
         playback = midi_file.play()
 
+        
+
+        # Continue playback from the current position
         while True:
             if paused:
                 pause_event.wait()  # Wait while paused
@@ -136,6 +171,7 @@ def main():
 
             except StopIteration:
                 # MIDI file playback has finished
+                print("MIDI playback has finished.")
                 break
 
     finally:
@@ -147,3 +183,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

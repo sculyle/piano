@@ -5,7 +5,9 @@ import subprocess
 import os
 import signal
 import mido
-
+import subprocess
+import time
+import threading
 
 # Setup Config
 root = tk.Tk()
@@ -21,7 +23,7 @@ likee = '/home/instrumentgroup/Downloads/likee.jpg'
 nolikee = '/home/instrumentgroup/Downloads/nolikee.jpg'
 pause_path = play_button_path
 play_path = pause_button_path
-
+playback_position = 0
 
 # Like Button Declarations
 song1like = 0
@@ -38,7 +40,7 @@ song = 'Select song choice.'
 like = 0
 velocity_percentage = tk.DoubleVar(value=50)  # Default value
 channels_allowed = tk.BooleanVar(value=False)  # Checkbox variable
-
+current_midi_file_path = ''
 
 # Button Functions
 def button_func1():
@@ -86,17 +88,39 @@ def likeit():
     else: like = 1
     like_func()
 
+
 def pause():
-    global stop
-    if stop ==0:
+    global stop, playback_position, current_midi_file_path
+    if stop == 0:
         print("Pausing the song")
+        time.sleep(0.1)
         process.send_signal(signal.SIGUSR1)  # Send signal to pause
-        stop =1
-    elif stop ==1:
+        print(f"Playback Position: {playback_position}")
+        stop = 1
+    elif stop == 1:
+        print("Resuming the song")
+        #process.send_signal(signal.SIGUSR2)  # Send signal to resume
+        run_led_piano(current_midi_file_path, velocity_percentage.get(), playback_position)
         stop = 0
-        print("Playing the song")
-        process.send_signal(signal.SIGUSR2)  # Send signal to ... play?
-    currentsong()
+        # Start playback from the stored position
+    display()
+
+
+def get_playback_position(process):
+    """Read the output from the subprocess and extract the playback position."""
+    global playback_position  # Use the global variable
+
+    # Read the output line by line
+    for line in iter(process.stdout.readline, ''):  # Read until EOF
+        line = line.strip()  # Remove leading/trailing whitespace
+        print(line)  # Print the line for reference (to the main terminal)
+
+        # Check if the line contains "Paused at position:"
+        if "Paused at position:" in line:
+            # Extract the playback position value
+            playback_position = line.split(': ')[-1].strip()
+            print(f"Extracted Playback Position: {playback_position}")  # Debugging output
+            break  # Exit the loop once we find the value
 
 
 
@@ -240,6 +264,12 @@ def display():
     if enable == 4:
         imagepath = '/home/instrumentgroup/Downloads/eatingcats.png'
         song = '♪♫ Playing Song B ♪♬'
+    
+    if stop ==1:
+        pause_button.config(image=play_pic)
+    else:
+        pause_button.config(image=pause_pic)
+    
     image_path = imagepath
     image_og = Image.open(image_path)
     image_tk = ImageTk.PhotoImage(image_og)
@@ -249,14 +279,7 @@ def display():
     label2.config(text=song)
     label2.grid(columnspan =3, column = 8, row = 15)
 
-def pause():
-    if stop ==1:
-        pause_button.config(image=play_pic)
-    else:
-        pause_button.config(image=pause_pic)
-
-
-
+    
 def like_func():
     global like, song1like, song2like, song3like, song4like
     if song1like ==1 and enable ==1 :
@@ -271,55 +294,84 @@ def like_func():
         like_button.config(image=nolike_pic)
 
          
-def run_led_piano(midi_file_path, percentage):
-    global process
-    stop_previous_process()
+#def run_led_piano(midi_file_path, percentage):
+ #   global process
+ #   stop_previous_process()
 
     # Get the state of channels_allowed (assumed to be a boolean)
-    channels_allowed_value = int(channels_allowed.get())  # Convert to 0 or 1
-    print(pathpath.length)
-    process = subprocess.Popen(['python3', 'led_piano.py', str(channels_allowed_value), midi_file_path, str(percentage)], 
-                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
-                               preexec_fn=os.setsid)  # Start the process in a new process group
-
+#    channels_allowed_value = int(channels_allowed.get())  # Convert to 0 or 1
+#    print(pathpath.length)
+#    process = subprocess.Popen(['python3', 'led_piano.py', str(channels_allowed_value), midi_file_path, str(percentage)], 
+#                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+#                               preexec_fn=os.setsid)  # Start the process in a new process group
+    
+    
 
 # Run playback script
-def run_led_piano(midi_file_path, percentage):
+def run_led_piano(midi_file_path, percentage, playback_position):
     global process
     stop_previous_process()
 
     # Get the state of channels_allowed (assumed to be a boolean)
     channels_allowed_value = int(channels_allowed.get())  # Convert to 0 or 1
-    print(f"Channels Allowed: {channels_allowed_value}. Running led_piano.py with file: {midi_file_path} and filtering percentage: {percentage}")
+    print(f"Channels Allowed: {channels_allowed_value}. Running led_piano.py with file: {midi_file_path} and filtering percentage: {percentage}, starting from position: {playback_position}")
     
-    process = subprocess.Popen(['python3', 'led_piano.py', str(channels_allowed_value), midi_file_path, str(percentage)], 
-                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
-                               preexec_fn=os.setsid)  # Start the process in a new process group
+    process = subprocess.Popen(['python3', 'led_piano.py', str(channels_allowed_value), midi_file_path, str(percentage), str(playback_position)], 
+                               stdout=subprocess.PIPE, 
+                               stderr=subprocess.PIPE, 
+                               text=True,
+                               bufsize=1)
+                     #          preexec_fn=os.setsid)  # Start the process in a new process group
+    
+    threading.Thread(target=read_output, args=(process,), daemon=True).start()
+
+    
+def read_output(process):
+    """Read output from the subprocess and extract playback position information."""
+    global playback_position  # Access the global playback_position variable
+    for line in iter(process.stdout.readline, ''):
+        stripped_line = line.strip()  # Strip leading/trailing whitespace
+        print(stripped_line)  # Print each line for debugging
+
+        # Check if the line contains "Paused at position:"
+        if "Paused at position:" in stripped_line:
+            # Extract the playback position value
+            playback_position = stripped_line.split(': ')[-1].strip()  # Get the number after the colon
+            print(f"Extracted Playback Position: {playback_position}")  # Debugging output
+
+    process.stdout.close()
+
 
 
 
 # Control of call to the playback script
 def currentsong():
+    global current_midi_file_path
     percentage = velocity_percentage.get()
+    playback_position = 0
     if enable == 0:
         print('loading')
     if enable == 1 and stop == 0:
         print('Wii Theme')
-        run_led_piano('/home/instrumentgroup/Downloads/wii.mid', percentage)
+        current_midi_file_path = '/home/instrumentgroup/Downloads/wii.mid'
+        run_led_piano(current_midi_file_path, percentage, playback_position)
     elif enable == 2 and stop == 0:
         print('Jingle Bells')
-        run_led_piano('/home/instrumentgroup/Downloads/Carol.mid', percentage)
+        current_midi_file_path = '/home/instrumentgroup/Downloads/Carol.mid'
+        run_led_piano(current_midi_file_path, percentage, playback_position)
     elif enable == 3 and stop == 0:
         print('National Anthem')
-        run_led_piano('/home/instrumentgroup/Downloads/USA.mid', percentage)
+        current_midi_file_path = '/home/instrumentgroup/Downloads/USA.mid'
+        run_led_piano(current_midi_file_path, percentage, playback_position)
     elif enable == 4 and stop == 0:
         print('All the Small Things')
-        run_led_piano('/home/instrumentgroup/Downloads/BLINK.mid', percentage)
+        current_midi_file_path = '/home/instrumentgroup/Downloads/test_midi_cd.mid'
+        #run_led_piano('/home/instrumentgroup/Downloads/BLINK.mid', percentage, playback_position)
+        run_led_piano(current_midi_file_path, percentage, playback_position)
     elif stop == 1:
         print('Song is on Pause')
     like_func()
     display()
-    pause()
    
 
 
