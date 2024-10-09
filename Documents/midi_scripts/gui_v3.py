@@ -365,7 +365,7 @@ def currentsong():
         run_led_piano(current_midi_file_path, percentage, playback_position)
     elif enable == 4 and stop == 0:
         print('All the Small Things')
-        current_midi_file_path = '/home/instrumentgroup/Downloads/test_midi_cd.mid'
+        current_midi_file_path = '/home/instrumentgroup/Downloads/test_cde.mid'
         #run_led_piano('/home/instrumentgroup/Downloads/BLINK.mid', percentage, playback_position)
         run_led_piano(current_midi_file_path, percentage, playback_position)
     elif stop == 1:

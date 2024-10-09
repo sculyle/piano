@@ -4,6 +4,7 @@ import RPi.GPIO as GPIO
 import sys
 import signal
 import threading
+import time
 
 # Map every note in any octave to C4-B4 for your piano (MIDI notes 60-71)
 note_to_pin = {
@@ -29,24 +30,20 @@ def map_note_to_piano(note):
 paused = False
 playback_position = 0
 pause_event = threading.Event()
-resume_event = threading.Event()
 max_velocity = 0
 velocity_threshold = 0
 active_notes = set()  # Track currently active notes
 
 def handle_signal(signum, frame):
-    global paused, playback_position
+    global paused
     if signum == signal.SIGUSR1:
         paused = True
         pause_event.set()
-        #print("Paused")
         print(f"Paused at position: {playback_position}")
         sys.stdout.flush()
-        sys.exit()
     elif signum == signal.SIGUSR2:
         paused = False
-        resume_event.set()
-        #print("Resumed")
+        pause_event.clear()
 
 def get_tempo(midi_file_path):
     """Retrieve the tempo from the MIDI file."""
@@ -54,7 +51,6 @@ def get_tempo(midi_file_path):
     for track in midi_file.tracks:
         for msg in track:
             if msg.type == 'set_tempo':
-                # Tempo is specified in microseconds per beat
                 return mido.tempo2bpm(msg.tempo)  # Convert to BPM
     return 120  # Default to 120 BPM if no tempo is found
 
@@ -67,22 +63,15 @@ def find_max_velocity(midi_file):
                 max_velocity = msg.velocity
     return max_velocity
 
-
-
-# Add this function to continuously update playback position
-def update_playback_position(playback):
-    global playback_position
-    while True:
-        if paused:
-            time.sleep(0.1)  # Sleep if paused to avoid busy-waiting
-            continue
-        try:
-            msg = next(playback)  # Get the next MIDI message
-            playback_position += msg.time  # Update playback position
-            time.sleep(0.01)  # Add slight delay to reduce CPU usage
-        except StopIteration:
-            break
-
+def skip_to_position(midi_file, start_ticks):
+    """Skip through MIDI messages to reach a specified start position."""
+    current_time = 0
+    for msg in midi_file.play():
+        current_time += msg.time
+        if current_time >= start_ticks:
+            print(f"Skipped to position: {start_ticks} ticks")
+            return msg  # Return the first message after skipping to the position
+    return None  # If the end of the file is reached before the start position
 
 def main():
     global playback_position, paused, max_velocity, velocity_threshold, active_notes
@@ -92,10 +81,10 @@ def main():
         channels_allowed_value = int(sys.argv[1])  # Convert from string to integer
         midi_file_path = sys.argv[2]
         percentage = float(sys.argv[3])
-        playback_position = int(sys.argv[4])  # Get playback position from arguments
+        playback_position = float(sys.argv[4])  # Get playback position from arguments (in seconds)
         print(f"Channels Allowed: {channels_allowed_value}")
         print(f"Playing MIDI file: {midi_file_path} with filtering percentage: {percentage}")
-        print(f"Starting from playback position: {playback_position}")
+        print(f"Starting from playback position: {playback_position} seconds")
     else:
         print("No MIDI file path, channels allowed, filtering percentage, or playback position provided")
         sys.exit(1)
@@ -133,12 +122,24 @@ def main():
         velocity_threshold = max_velocity * (percentage / 100)
         print(f"Max Velocity: {max_velocity}, Velocity Threshold: {velocity_threshold}")
 
-        # Initialize playback
+        # Calculate the playback position in ticks
+        ticks_per_second = midi_file.ticks_per_beat / (60 / get_tempo(midi_file_path))
+        start_ticks = int(playback_position * ticks_per_second)
+
+        # Skip to the desired playback position and start playback
+        skipped_msg = skip_to_position(midi_file, start_ticks)
+
+        # Initialize playback from the skipped message
         playback = midi_file.play()
 
+        # Skip messages until we find the one after the skipped message
+        for msg in playback:
+            if msg == skipped_msg:
+                # Start from the next message after the skipped position
+                print("Starting playback from skipped position")
+                break
         
-
-        # Continue playback from the current position
+        # Continue playback
         while True:
             if paused:
                 pause_event.wait()  # Wait while paused
@@ -146,9 +147,9 @@ def main():
             
             try:
                 msg = next(playback)
-                playback_position += msg.time
+                playback_position += msg.time / ticks_per_second  # Update playback position in seconds
 
-                # Modify this part to utilize channel_select
+                # Process note messages based on allowed channels
                 if msg.type in ['note_on', 'note_off']:
                     # Only process note messages if they are on the allowed channels
                     if 0 <= msg.channel <= channel_select:
