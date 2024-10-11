@@ -182,6 +182,5 @@ def main():
         print("\nSong Ended")
         sys.stdout.flush()
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     main()
-
