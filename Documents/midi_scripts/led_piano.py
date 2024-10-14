@@ -8,18 +8,18 @@ import time
 
 # Map every note in any octave to C4-B4 for your piano (MIDI notes 60-71)
 note_to_pin = {
-    60: 4,   # C4 (Middle C)
-    61: 17,  # C#4
-    62: 27,  # D4
-    63: 22,  # D#4
-    64: 23,  # E4
-    65: 10,  # F4
-    66: 9,   # F#4
-    67: 11,  # G4
+    60: 21,  # C4 (Middle C)
+    61: 20,  # C#4
+    62: 26,  # D4
+    63: 16,  # D#4
+    64: 19,  # E4
+    65: 13,  # F4
+    66: 12,  # F#4
+    67: 6,   # G4
     68: 5,   # G#4
-    69: 6,   # A4
-    70: 26,  # A#4
-    71: 21   # B4
+    69: 24,  # A4
+    70: 23,  # A#4
+    71: 22   # B4
 }
 
 def map_note_to_piano(note):
@@ -138,6 +138,7 @@ def main():
                 # Start from the next message after the skipped position
                 print("Starting playback from skipped position")
                 break
+
         
         # Continue playback
         while True:
