@@ -63,19 +63,27 @@ def find_max_velocity(midi_file):
                 max_velocity = msg.velocity
     return max_velocity
 
-def skip_to_position(midi_file, start_ticks):
-    """Skip through MIDI messages to reach a specified start position."""
-    current_time = 0
-    for msg in midi_file.play():
-        current_time += msg.time
-        if current_time >= start_ticks:
-            print(f"Skipped to position: {start_ticks} ticks")
-            return msg  # Return the first message after skipping to the position
-    return None  # If the end of the file is reached before the start position
+def process_midi_message(msg, channel_select):
+    """Process MIDI messages and control GPIO accordingly."""
+    if msg.type in ['note_on', 'note_off'] and 0 <= msg.channel <= channel_select:
+        mapped_note = map_note_to_piano(msg.note)
+        pin = note_to_pin.get(mapped_note)
+
+        if msg.type == 'note_on' and msg.velocity > velocity_threshold:
+            if pin:
+                GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
+                active_notes.add(msg.note)  # Add note to active notes
+                print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}, Velocity: {msg.velocity}")
+        elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
+            if pin:
+                GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
+                active_notes.discard(msg.note)  # Remove note from active notes
+                print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
+
 
 def main():
     global playback_position, paused, max_velocity, velocity_threshold, active_notes
-    
+
     # Check if the MIDI file path, channels_allowed, percentage, and playback_position are provided
     if len(sys.argv) > 4:
         channels_allowed_value = int(sys.argv[1])  # Convert from string to integer
@@ -126,47 +134,34 @@ def main():
         ticks_per_second = midi_file.ticks_per_beat / (60 / get_tempo(midi_file_path))
         start_ticks = int(playback_position * ticks_per_second)
 
-        # Skip to the desired playback position and start playback
-        skipped_msg = skip_to_position(midi_file, start_ticks)
-
-        # Initialize playback from the skipped message
         playback = midi_file.play()
 
-        # Skip messages until we find the one after the skipped message
+        # Skip directly to the first message at or beyond the start_ticks
+        current_ticks = 0
         for msg in playback:
-            if msg == skipped_msg:
-                # Start from the next message after the skipped position
-                print("Starting playback from skipped position")
-                break
+            current_ticks += msg.time  # Update current ticks
 
-        
-        # Continue playback
+            # Check if we've reached or exceeded the start_ticks
+            if current_ticks >= start_ticks:
+                print(f"Starting playback at tick position: {current_ticks}")
+                playback_position += (current_ticks - start_ticks) / ticks_per_second  # Update playback position
+                break  # Exit the loop once we reach the desired position
+
+        # Start processing MIDI messages immediately
         while True:
             if paused:
                 pause_event.wait()  # Wait while paused
                 continue
             
             try:
+                # Process the current message
+                process_midi_message(msg, channel_select)
+
+                # Update playback position in seconds
+                playback_position += msg.time / ticks_per_second  
+
+                # Get the next message for processing
                 msg = next(playback)
-                playback_position += msg.time / ticks_per_second  # Update playback position in seconds
-
-                # Process note messages based on allowed channels
-                if msg.type in ['note_on', 'note_off']:
-                    # Only process note messages if they are on the allowed channels
-                    if 0 <= msg.channel <= channel_select:
-                        mapped_note = map_note_to_piano(msg.note)
-                        pin = note_to_pin.get(mapped_note)
-
-                        if msg.type == 'note_on' and msg.velocity > velocity_threshold:
-                            if pin:
-                                GPIO.output(pin, GPIO.HIGH)  # Turn on the corresponding GPIO pin
-                                active_notes.add(msg.note)  # Add note to active notes
-                                print(f"Note ON: {msg.note} (mapped to {mapped_note}), Pin {pin}, Velocity: {msg.velocity}")
-                        elif msg.type == 'note_off' or (msg.type == 'note_on' and msg.velocity == 0):
-                            if pin:
-                                GPIO.output(pin, GPIO.LOW)  # Turn off the corresponding GPIO pin
-                                active_notes.discard(msg.note)  # Remove note from active notes
-                                print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
 
                 # Output currently active notes
                 print(f"Currently active notes: {list(active_notes)}")
@@ -185,3 +180,4 @@ def main():
 
 if __name__ == "__main__": 
     main()
+
