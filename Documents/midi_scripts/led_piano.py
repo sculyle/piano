@@ -4,7 +4,6 @@ import RPi.GPIO as GPIO
 import sys
 import signal
 import threading
-import time
 
 # Map every note in any octave to C4-B4 for your piano (MIDI notes 60-71)
 note_to_pin = {
@@ -80,6 +79,24 @@ def process_midi_message(msg, channel_select):
                 active_notes.discard(msg.note)  # Remove note from active notes
                 print(f"Note OFF: {msg.note} (mapped to {mapped_note}), Pin {pin}")
 
+def seek_midi(midi_file, time_in_seconds):
+    mid = mido.MidiFile(midi_file)
+    messages = []
+
+    # Calculate the desired time in ticks
+    ticks_per_beat = mid.ticks_per_beat
+    tempo = 500000  # Default tempo (microseconds per beat)
+    target_ticks = int(mido.second2tick(time_in_seconds, ticks_per_beat, tempo))
+
+    for track in mid.tracks:
+        tick = 0
+        for msg in track:
+            tick += msg.time
+            if tick >= target_ticks:
+                messages.append(msg)
+                break
+
+    return messages
 
 def main():
     global playback_position, paused, max_velocity, velocity_threshold, active_notes
@@ -130,46 +147,59 @@ def main():
         velocity_threshold = max_velocity * (percentage / 100)
         print(f"Max Velocity: {max_velocity}, Velocity Threshold: {velocity_threshold}")
 
-        # Calculate the playback position in ticks
+        # Calculate ticks per second
         ticks_per_second = midi_file.ticks_per_beat / (60 / get_tempo(midi_file_path))
-        start_ticks = int(playback_position * ticks_per_second)
 
-        playback = midi_file.play()
+        # Use seek_midi to find the messages starting from playback_position
+        messages_to_play = seek_midi(midi_file_path, playback_position)
 
-        # Skip directly to the first message at or beyond the start_ticks
+        # Process messages to play from the sought position
+        for msg in messages_to_play:
+            process_midi_message(msg, channel_select)
+            playback_position += msg.time / ticks_per_second  # Update playback position in seconds
+
+        # Collect all messages from all tracks into a list for easier processing
+        all_messages = []
+        for track in midi_file.tracks:
+            all_messages.extend(track)
+
         current_ticks = 0
-        for msg in playback:
-            current_ticks += msg.time  # Update current ticks
 
-            # Check if we've reached or exceeded the start_ticks
-            if current_ticks >= start_ticks:
-                print(f"Starting playback at tick position: {current_ticks}")
-                playback_position += (current_ticks - start_ticks) / ticks_per_second  # Update playback position
-                break  # Exit the loop once we reach the desired position
+        # Initialize an index to track the current message
+        index = 0
 
-        # Start processing MIDI messages immediately
-        while True:
-            if paused:
-                pause_event.wait()  # Wait while paused
-                continue
+        # Iterate through the messages
+        while index < len(all_messages):
+            msg = all_messages[index]
+            current_ticks += msg.time
             
-            try:
+            # If we are at or past the desired playback position
+            if current_ticks >= mido.second2tick(playback_position, midi_file.ticks_per_beat, 500000):
                 # Process the current message
-                process_midi_message(msg, channel_select)
+                while index < len(all_messages):
+                    msg = all_messages[index]
+                    
+                    # Check for pause
+                    if paused:
+                        pause_event.wait()  # Wait while paused
+                        continue
+                    
+                    # Handle note on/off
+                    process_midi_message(msg, channel_select)
+                    
+                    # Update playback position based on the time of the message
+                    playback_position += msg.time / ticks_per_second  # Update playback position
 
-                # Update playback position in seconds
-                playback_position += msg.time / ticks_per_second  
+                    print(f"Currently active notes: {list(active_notes)}")
 
-                # Get the next message for processing
-                msg = next(playback)
-
-                # Output currently active notes
-                print(f"Currently active notes: {list(active_notes)}")
-
-            except StopIteration:
-                # MIDI file playback has finished
-                print("MIDI playback has finished.")
-                break
+                    # Move to the next message
+                    index += 1
+                    
+                    # Break out of the loop to re-evaluate current_ticks after processing this message
+                    break
+            else:
+                # Move to the next message
+                index += 1
 
     finally:
         for pin in note_to_pin.values():
